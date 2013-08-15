@@ -1,0 +1,2082 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'phantomjs' ]
+2 info using npm@1.3.7
+3 info using node@v0.10.13
+4 verbose cache add [ 'phantomjs', null ]
+5 verbose cache add name=undefined spec="phantomjs" args=["phantomjs",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'phantomjs',
+6 verbose parsed url   path: 'phantomjs',
+6 verbose parsed url   href: 'phantomjs' }
+7 silly lockFile 30d7cd7d-phantomjs phantomjs
+8 verbose lock phantomjs /root/.npm/30d7cd7d-phantomjs.lock
+9 silly lockFile 30d7cd7d-phantomjs phantomjs
+10 silly lockFile 30d7cd7d-phantomjs phantomjs
+11 verbose addNamed [ 'phantomjs', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 29cf7fd6-phantomjs phantomjs@
+14 verbose lock phantomjs@ /root/.npm/29cf7fd6-phantomjs.lock
+15 silly addNameRange { name: 'phantomjs', range: '*', hasData: false }
+16 verbose url raw phantomjs
+17 verbose url resolving [ 'https://registry.npmjs.org/', './phantomjs' ]
+18 verbose url resolved https://registry.npmjs.org/phantomjs
+19 info trying registry request attempt 1 at 11:54:07
+20 verbose etag "6M9Q132CEVEXG8YTTTXO8S938"
+21 http GET https://registry.npmjs.org/phantomjs
+22 http 304 https://registry.npmjs.org/phantomjs
+23 silly registry.get cb [ 304,
+23 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+23 silly registry.get     etag: '"6M9Q132CEVEXG8YTTTXO8S938"',
+23 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:51 GMT',
+23 silly registry.get     'content-length': '0' } ]
+24 verbose etag phantomjs from cache
+25 silly addNameRange number 2 { name: 'phantomjs', range: '*', hasData: true }
+26 silly addNameRange versions [ 'phantomjs',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.0.3',
+26 silly addNameRange     '0.0.4',
+26 silly addNameRange     '0.0.5',
+26 silly addNameRange     '0.0.6',
+26 silly addNameRange     '0.0.7',
+26 silly addNameRange     '0.0.8',
+26 silly addNameRange     '0.0.9',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.2.3',
+26 silly addNameRange     '0.2.4',
+26 silly addNameRange     '0.2.5',
+26 silly addNameRange     '0.2.6',
+26 silly addNameRange     '1.8.0-1',
+26 silly addNameRange     '1.8.1-1',
+26 silly addNameRange     '1.8.1-2',
+26 silly addNameRange     '1.8.1-3',
+26 silly addNameRange     '1.8.2-0',
+26 silly addNameRange     '1.8.2-1',
+26 silly addNameRange     '1.8.2-2',
+26 silly addNameRange     '1.9.0-0',
+26 silly addNameRange     '1.9.0-1',
+26 silly addNameRange     '1.9.0-2',
+26 silly addNameRange     '1.9.0-3',
+26 silly addNameRange     '1.9.0-4',
+26 silly addNameRange     '1.9.0-5',
+26 silly addNameRange     '1.9.0-6',
+26 silly addNameRange     '1.9.1-0' ] ]
+27 verbose addNamed [ 'phantomjs', '1.9.1-0' ]
+28 verbose addNamed [ '1.9.1-0', '1.9.1-0' ]
+29 silly lockFile ddef0dd9-phantomjs-1-9-1-0 phantomjs@1.9.1-0
+30 verbose lock phantomjs@1.9.1-0 /root/.npm/ddef0dd9-phantomjs-1-9-1-0.lock
+31 silly lockFile ddef0dd9-phantomjs-1-9-1-0 phantomjs@1.9.1-0
+32 silly lockFile ddef0dd9-phantomjs-1-9-1-0 phantomjs@1.9.1-0
+33 silly lockFile 29cf7fd6-phantomjs phantomjs@
+34 silly lockFile 29cf7fd6-phantomjs phantomjs@
+35 silly resolved [ { name: 'phantomjs',
+35 silly resolved     version: '1.9.1-0',
+35 silly resolved     keywords: [ 'phantomjs', 'headless', 'webkit' ],
+35 silly resolved     description: 'Headless WebKit with JS API',
+35 silly resolved     homepage: 'https://github.com/Obvious/phantomjs',
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/Obvious/phantomjs.git' },
+35 silly resolved     licenses: [ [Object] ],
+35 silly resolved     author:
+35 silly resolved      { name: 'Dan Pupius',
+35 silly resolved        email: 'dan@obvious.com',
+35 silly resolved        url: 'http://pupius.co.uk' },
+35 silly resolved     maintainers: [ [Object] ],
+35 silly resolved     main: 'lib/phantomjs',
+35 silly resolved     bin: { phantomjs: './bin/phantomjs' },
+35 silly resolved     scripts:
+35 silly resolved      { install: 'node install.js',
+35 silly resolved        test: 'nodeunit --reporter=minimal test/tests.js' },
+35 silly resolved     dependencies:
+35 silly resolved      { 'adm-zip': '0.2.1',
+35 silly resolved        kew: '~0.1.7',
+35 silly resolved        ncp: '0.4.2',
+35 silly resolved        npmconf: '0.0.24',
+35 silly resolved        mkdirp: '0.3.5',
+35 silly resolved        rimraf: '~2.0.2' },
+35 silly resolved     devDependencies: { nodeunit: '~0.7.4' },
+35 silly resolved     readme: 'phantom\n=======\n\nAn NPM wrapper for [PhantomJS](http://phantomjs.org/), headless webkit with JS API.\n\nBuilding and Installing\n-----------------------\n\n```shell\nnpm install phantomjs\n```\n\nOr grab the source and\n\n```shell\nnode ./install.js\n```\n\nWhat this is really doing is just grabbing a particular "blessed" (by\nthis module) version of Phantom. As new versions of Phantom are released\nand vetted, this module will be updated accordingly.\n\nThe package has been set up to fetch and run Phantom for MacOS (darwin),\nLinux based platforms (as identified by nodejs), and -- as of version 0.2.0 --\nWindows (thanks to [Domenic Denicola](https://github.com/domenic)).  If you\nspot any platform weirdnesses, let us know or send a patch.\n\nRunning\n-------\n\n```shell\nbin/phantom [phantom arguments]\n```\n\nAnd npm will install a link to the binary in `node_modules/.bin` as\nit is wont to do.\n\nRunning via node\n----------------\n\nThe package exports a `path` string that contains the path to the\nphantomjs binary/executable.\n\nBelow is an example of using this package via node.\n\n```javascript\nvar childProcess = require(\'child_process\')\nvar phantomjs = require(\'phantomjs\')\nvar binPath = phantomjs.path\n\nvar childArgs = [\n  path.join(__dirname, \'phantomjs-script.js\'),\n  \'some other argument (passed to phantomjs script)\'\n]\n\nchildProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {\n  // handle results\n})\n\n```\n\nVersioning\n----------\n\nThe NPM package version tracks the version of PhantomJS that will be installed,\nwith an additional build number that is used for revisions to the installer.\n\nAs such `1.8.0-1` will `1.8.0-2` will both install PhantomJs 1.8 but the latter\nhas newer changes to the installer.\n\nA Note on PhantomJS\n-------------------\n\nPhantomJS is not a library for NodeJS.  It\'s a separate environment and code\nwritten for node is unlikely to be compatible.  In particular PhantomJS does\nnot expose a Common JS package loader.\n\nThis is an _NPM wrapper_ and can be used to conveniently make Phantom available\nIt is not a Node JS wrapper.\n\nI have had reasonable experiences writing standalone Phantom scripts which I\nthen drive from within a node program by spawning phantom in a child process.\n\nRead the PhantomJS FAQ for more details: http://phantomjs.org/faq.html\n\nContributing\n------------\n\nQuestions, comments, bug reports, and pull requests are all welcome.  Submit them at\n[the project on GitHub](https://github.com/Obvious/phantomjs/).  If you haven\'t contributed to an\n[Obvious](http://github.com/Obvious/) project before please head over to the\n[Open Source Project](https://github.com/Obvious/open-source#note-to-external-contributors) and fill\nout an OCLA (it should be pretty painless).\n\nBug reports that include steps-to-reproduce (including code) are the\nbest. Even better, make them in the form of pull requests.\n\nAuthor\n------\n\n[Dan Pupius](https://github.com/dpup)\n([personal website](http://pupius.co.uk)), supported by\n[The Obvious Corporation](http://obvious.com/).\n\nLicense\n-------\n\nCopyright 2012 [The Obvious Corporation](http://obvious.com/).\n\nLicensed under the Apache License, Version 2.0.\nSee the top-level file `LICENSE.txt` and\n(http://www.apache.org/licenses/LICENSE-2.0).\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     bugs: { url: 'https://github.com/Obvious/phantomjs/issues' },
+35 silly resolved     _id: 'phantomjs@1.9.1-0',
+35 silly resolved     _from: 'phantomjs@' } ]
+36 info install phantomjs@1.9.1-0 into /usr/lib
+37 info installOne phantomjs@1.9.1-0
+38 info /usr/lib/node_modules/phantomjs unbuild
+39 verbose tar unpack /root/.npm/phantomjs/1.9.1-0/package.tgz
+40 silly lockFile ce07c23f-r-usr-lib-node-modules-phantomjs tar:///usr/lib/node_modules/phantomjs
+41 verbose lock tar:///usr/lib/node_modules/phantomjs /root/.npm/ce07c23f-r-usr-lib-node-modules-phantomjs.lock
+42 silly lockFile bc4d8083-pm-phantomjs-1-9-1-0-package-tgz tar:///root/.npm/phantomjs/1.9.1-0/package.tgz
+43 verbose lock tar:///root/.npm/phantomjs/1.9.1-0/package.tgz /root/.npm/bc4d8083-pm-phantomjs-1-9-1-0-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm extractEntry install.js
+49 silly gunzTarPerm extractEntry .jshintrc
+50 silly gunzTarPerm extractEntry LICENSE.txt
+51 silly gunzTarPerm extractEntry bin/phantomjs
+52 silly gunzTarPerm extractEntry lib/phantomjs.js
+53 silly gunzTarPerm extractEntry test/loadspeed.js
+54 silly gunzTarPerm extractEntry test/tests.js
+55 silly lockFile ce07c23f-r-usr-lib-node-modules-phantomjs tar:///usr/lib/node_modules/phantomjs
+56 silly lockFile ce07c23f-r-usr-lib-node-modules-phantomjs tar:///usr/lib/node_modules/phantomjs
+57 silly lockFile bc4d8083-pm-phantomjs-1-9-1-0-package-tgz tar:///root/.npm/phantomjs/1.9.1-0/package.tgz
+58 silly lockFile bc4d8083-pm-phantomjs-1-9-1-0-package-tgz tar:///root/.npm/phantomjs/1.9.1-0/package.tgz
+59 info preinstall phantomjs@1.9.1-0
+60 verbose readDependencies using package.json deps
+61 verbose readDependencies using package.json deps
+62 verbose cache add [ 'ncp@0.4.2', null ]
+63 verbose cache add name=undefined spec="ncp@0.4.2" args=["ncp@0.4.2",null]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: 'ncp@0.4.2',
+64 verbose parsed url   path: 'ncp@0.4.2',
+64 verbose parsed url   href: 'ncp@0.4.2' }
+65 verbose cache add name="ncp" spec="0.4.2" args=["ncp","0.4.2"]
+66 verbose parsed url { protocol: null,
+66 verbose parsed url   slashes: null,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: null,
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: null,
+66 verbose parsed url   hash: null,
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: '0.4.2',
+66 verbose parsed url   path: '0.4.2',
+66 verbose parsed url   href: '0.4.2' }
+67 verbose addNamed [ 'ncp', '0.4.2' ]
+68 verbose addNamed [ '0.4.2', '0.4.2' ]
+69 silly lockFile e43cb36a-ncp-0-4-2 ncp@0.4.2
+70 verbose lock ncp@0.4.2 /root/.npm/e43cb36a-ncp-0-4-2.lock
+71 verbose cache add [ 'adm-zip@0.2.1', null ]
+72 verbose cache add name=undefined spec="adm-zip@0.2.1" args=["adm-zip@0.2.1",null]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: 'adm-zip@0.2.1',
+73 verbose parsed url   path: 'adm-zip@0.2.1',
+73 verbose parsed url   href: 'adm-zip@0.2.1' }
+74 verbose cache add name="adm-zip" spec="0.2.1" args=["adm-zip","0.2.1"]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: '0.2.1',
+75 verbose parsed url   path: '0.2.1',
+75 verbose parsed url   href: '0.2.1' }
+76 verbose addNamed [ 'adm-zip', '0.2.1' ]
+77 verbose addNamed [ '0.2.1', '0.2.1' ]
+78 silly lockFile 56d2b9bc-adm-zip-0-2-1 adm-zip@0.2.1
+79 verbose lock adm-zip@0.2.1 /root/.npm/56d2b9bc-adm-zip-0-2-1.lock
+80 verbose cache add [ 'kew@~0.1.7', null ]
+81 verbose cache add name=undefined spec="kew@~0.1.7" args=["kew@~0.1.7",null]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: 'kew@~0.1.7',
+82 verbose parsed url   path: 'kew@~0.1.7',
+82 verbose parsed url   href: 'kew@~0.1.7' }
+83 verbose cache add name="kew" spec="~0.1.7" args=["kew","~0.1.7"]
+84 verbose parsed url { protocol: null,
+84 verbose parsed url   slashes: null,
+84 verbose parsed url   auth: null,
+84 verbose parsed url   host: null,
+84 verbose parsed url   port: null,
+84 verbose parsed url   hostname: null,
+84 verbose parsed url   hash: null,
+84 verbose parsed url   search: null,
+84 verbose parsed url   query: null,
+84 verbose parsed url   pathname: '~0.1.7',
+84 verbose parsed url   path: '~0.1.7',
+84 verbose parsed url   href: '~0.1.7' }
+85 verbose addNamed [ 'kew', '~0.1.7' ]
+86 verbose addNamed [ null, '>=0.1.7-0 <0.2.0-0' ]
+87 silly lockFile fbc33e87-kew-0-1-7 kew@~0.1.7
+88 verbose lock kew@~0.1.7 /root/.npm/fbc33e87-kew-0-1-7.lock
+89 verbose cache add [ 'npmconf@0.0.24', null ]
+90 verbose cache add name=undefined spec="npmconf@0.0.24" args=["npmconf@0.0.24",null]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: 'npmconf@0.0.24',
+91 verbose parsed url   path: 'npmconf@0.0.24',
+91 verbose parsed url   href: 'npmconf@0.0.24' }
+92 verbose cache add name="npmconf" spec="0.0.24" args=["npmconf","0.0.24"]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: '0.0.24',
+93 verbose parsed url   path: '0.0.24',
+93 verbose parsed url   href: '0.0.24' }
+94 verbose addNamed [ 'npmconf', '0.0.24' ]
+95 verbose addNamed [ '0.0.24', '0.0.24' ]
+96 silly lockFile af02651e-npmconf-0-0-24 npmconf@0.0.24
+97 verbose lock npmconf@0.0.24 /root/.npm/af02651e-npmconf-0-0-24.lock
+98 verbose cache add [ 'mkdirp@0.3.5', null ]
+99 verbose cache add name=undefined spec="mkdirp@0.3.5" args=["mkdirp@0.3.5",null]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: 'mkdirp@0.3.5',
+100 verbose parsed url   path: 'mkdirp@0.3.5',
+100 verbose parsed url   href: 'mkdirp@0.3.5' }
+101 verbose cache add name="mkdirp" spec="0.3.5" args=["mkdirp","0.3.5"]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: '0.3.5',
+102 verbose parsed url   path: '0.3.5',
+102 verbose parsed url   href: '0.3.5' }
+103 verbose addNamed [ 'mkdirp', '0.3.5' ]
+104 verbose addNamed [ '0.3.5', '0.3.5' ]
+105 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+106 verbose lock mkdirp@0.3.5 /root/.npm/67d2df2a-mkdirp-0-3-5.lock
+107 verbose cache add [ 'rimraf@~2.0.2', null ]
+108 verbose cache add name=undefined spec="rimraf@~2.0.2" args=["rimraf@~2.0.2",null]
+109 verbose parsed url { protocol: null,
+109 verbose parsed url   slashes: null,
+109 verbose parsed url   auth: null,
+109 verbose parsed url   host: null,
+109 verbose parsed url   port: null,
+109 verbose parsed url   hostname: null,
+109 verbose parsed url   hash: null,
+109 verbose parsed url   search: null,
+109 verbose parsed url   query: null,
+109 verbose parsed url   pathname: 'rimraf@~2.0.2',
+109 verbose parsed url   path: 'rimraf@~2.0.2',
+109 verbose parsed url   href: 'rimraf@~2.0.2' }
+110 verbose cache add name="rimraf" spec="~2.0.2" args=["rimraf","~2.0.2"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: '~2.0.2',
+111 verbose parsed url   path: '~2.0.2',
+111 verbose parsed url   href: '~2.0.2' }
+112 verbose addNamed [ 'rimraf', '~2.0.2' ]
+113 verbose addNamed [ null, '>=2.0.2-0 <2.1.0-0' ]
+114 silly lockFile 723423b4-rimraf-2-0-2 rimraf@~2.0.2
+115 verbose lock rimraf@~2.0.2 /root/.npm/723423b4-rimraf-2-0-2.lock
+116 silly addNameRange { name: 'kew', range: '>=0.1.7-0 <0.2.0-0', hasData: false }
+117 silly addNameRange { name: 'rimraf', range: '>=2.0.2-0 <2.1.0-0', hasData: false }
+118 verbose url raw ncp/0.4.2
+119 verbose url resolving [ 'https://registry.npmjs.org/', './ncp/0.4.2' ]
+120 verbose url resolved https://registry.npmjs.org/ncp/0.4.2
+121 info trying registry request attempt 1 at 11:54:07
+122 verbose etag "ATS9XSOJIH1FYJKRVWQHX9UNW"
+123 http GET https://registry.npmjs.org/ncp/0.4.2
+124 verbose url raw adm-zip/0.2.1
+125 verbose url resolving [ 'https://registry.npmjs.org/', './adm-zip/0.2.1' ]
+126 verbose url resolved https://registry.npmjs.org/adm-zip/0.2.1
+127 info trying registry request attempt 1 at 11:54:07
+128 verbose etag "DEWMC58B79MYHNRIX3C4LEL47"
+129 http GET https://registry.npmjs.org/adm-zip/0.2.1
+130 verbose url raw kew
+131 verbose url resolving [ 'https://registry.npmjs.org/', './kew' ]
+132 verbose url resolved https://registry.npmjs.org/kew
+133 info trying registry request attempt 1 at 11:54:07
+134 verbose etag "6WI80ZVN9X93ARMY7LQ4OODM8"
+135 http GET https://registry.npmjs.org/kew
+136 verbose url raw npmconf/0.0.24
+137 verbose url resolving [ 'https://registry.npmjs.org/', './npmconf/0.0.24' ]
+138 verbose url resolved https://registry.npmjs.org/npmconf/0.0.24
+139 info trying registry request attempt 1 at 11:54:07
+140 verbose etag "EUWKWADSV8G0CH81HK973P36A"
+141 http GET https://registry.npmjs.org/npmconf/0.0.24
+142 verbose url raw mkdirp/0.3.5
+143 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.3.5' ]
+144 verbose url resolved https://registry.npmjs.org/mkdirp/0.3.5
+145 info trying registry request attempt 1 at 11:54:07
+146 verbose etag "A3251S0G3NT2AB7LYIM1NH7UK"
+147 http GET https://registry.npmjs.org/mkdirp/0.3.5
+148 verbose url raw rimraf
+149 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+150 verbose url resolved https://registry.npmjs.org/rimraf
+151 info trying registry request attempt 1 at 11:54:07
+152 verbose etag "50X3LWQDSY1SAULXQ7QRKW4PE"
+153 http GET https://registry.npmjs.org/rimraf
+154 http 304 https://registry.npmjs.org/ncp/0.4.2
+155 silly registry.get cb [ 304,
+155 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+155 silly registry.get     etag: '"ATS9XSOJIH1FYJKRVWQHX9UNW"',
+155 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+155 silly registry.get     'content-length': '0' } ]
+156 verbose etag ncp/0.4.2 from cache
+157 http 304 https://registry.npmjs.org/adm-zip/0.2.1
+158 silly registry.get cb [ 304,
+158 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+158 silly registry.get     etag: '"DEWMC58B79MYHNRIX3C4LEL47"',
+158 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+158 silly registry.get     'content-length': '0' } ]
+159 verbose etag adm-zip/0.2.1 from cache
+160 http 304 https://registry.npmjs.org/npmconf/0.0.24
+161 silly registry.get cb [ 304,
+161 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+161 silly registry.get     etag: '"EUWKWADSV8G0CH81HK973P36A"',
+161 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+161 silly registry.get     'content-length': '0' } ]
+162 verbose etag npmconf/0.0.24 from cache
+163 http 304 https://registry.npmjs.org/kew
+164 silly registry.get cb [ 304,
+164 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+164 silly registry.get     etag: '"6WI80ZVN9X93ARMY7LQ4OODM8"',
+164 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+164 silly registry.get     'content-length': '0' } ]
+165 verbose etag kew from cache
+166 http 304 https://registry.npmjs.org/mkdirp/0.3.5
+167 silly registry.get cb [ 304,
+167 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+167 silly registry.get     etag: '"A3251S0G3NT2AB7LYIM1NH7UK"',
+167 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+167 silly registry.get     'content-length': '0' } ]
+168 verbose etag mkdirp/0.3.5 from cache
+169 silly lockFile e43cb36a-ncp-0-4-2 ncp@0.4.2
+170 silly lockFile e43cb36a-ncp-0-4-2 ncp@0.4.2
+171 silly addNameRange number 2 { name: 'kew', range: '>=0.1.7-0 <0.2.0-0', hasData: true }
+172 silly addNameRange versions [ 'kew',
+172 silly addNameRange   [ '0.0.1',
+172 silly addNameRange     '0.0.2',
+172 silly addNameRange     '0.0.3',
+172 silly addNameRange     '0.0.4',
+172 silly addNameRange     '0.1.0',
+172 silly addNameRange     '0.1.1',
+172 silly addNameRange     '0.1.2',
+172 silly addNameRange     '0.1.3',
+172 silly addNameRange     '0.1.4',
+172 silly addNameRange     '0.1.5',
+172 silly addNameRange     '0.1.6',
+172 silly addNameRange     '0.1.7' ] ]
+173 verbose addNamed [ 'kew', '0.1.7' ]
+174 verbose addNamed [ '0.1.7', '0.1.7' ]
+175 silly lockFile 69cee516-kew-0-1-7 kew@0.1.7
+176 verbose lock kew@0.1.7 /root/.npm/69cee516-kew-0-1-7.lock
+177 http 304 https://registry.npmjs.org/rimraf
+178 silly registry.get cb [ 304,
+178 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+178 silly registry.get     etag: '"50X3LWQDSY1SAULXQ7QRKW4PE"',
+178 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+178 silly registry.get     'content-length': '0' } ]
+179 verbose etag rimraf from cache
+180 silly lockFile 56d2b9bc-adm-zip-0-2-1 adm-zip@0.2.1
+181 silly lockFile 56d2b9bc-adm-zip-0-2-1 adm-zip@0.2.1
+182 silly lockFile af02651e-npmconf-0-0-24 npmconf@0.0.24
+183 silly lockFile af02651e-npmconf-0-0-24 npmconf@0.0.24
+184 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+185 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+186 silly addNameRange number 2 { name: 'rimraf', range: '>=2.0.2-0 <2.1.0-0', hasData: true }
+187 silly addNameRange versions [ 'rimraf',
+187 silly addNameRange   [ '1.0.0',
+187 silly addNameRange     '1.0.1',
+187 silly addNameRange     '1.0.2',
+187 silly addNameRange     '1.0.4',
+187 silly addNameRange     '1.0.5',
+187 silly addNameRange     '1.0.6',
+187 silly addNameRange     '1.0.7',
+187 silly addNameRange     '1.0.8',
+187 silly addNameRange     '1.0.9',
+187 silly addNameRange     '2.0.0',
+187 silly addNameRange     '2.0.1',
+187 silly addNameRange     '2.0.2',
+187 silly addNameRange     '2.0.3',
+187 silly addNameRange     '2.1.0',
+187 silly addNameRange     '2.1.1',
+187 silly addNameRange     '2.1.2',
+187 silly addNameRange     '2.1.3',
+187 silly addNameRange     '2.1.4',
+187 silly addNameRange     '2.2.0',
+187 silly addNameRange     '2.2.1',
+187 silly addNameRange     '2.2.2' ] ]
+188 verbose addNamed [ 'rimraf', '2.0.3' ]
+189 verbose addNamed [ '2.0.3', '2.0.3' ]
+190 silly lockFile 166fc4dd-rimraf-2-0-3 rimraf@2.0.3
+191 verbose lock rimraf@2.0.3 /root/.npm/166fc4dd-rimraf-2-0-3.lock
+192 silly lockFile 69cee516-kew-0-1-7 kew@0.1.7
+193 silly lockFile 69cee516-kew-0-1-7 kew@0.1.7
+194 silly lockFile fbc33e87-kew-0-1-7 kew@~0.1.7
+195 silly lockFile fbc33e87-kew-0-1-7 kew@~0.1.7
+196 silly lockFile 166fc4dd-rimraf-2-0-3 rimraf@2.0.3
+197 silly lockFile 166fc4dd-rimraf-2-0-3 rimraf@2.0.3
+198 silly lockFile 723423b4-rimraf-2-0-2 rimraf@~2.0.2
+199 silly lockFile 723423b4-rimraf-2-0-2 rimraf@~2.0.2
+200 silly resolved [ { name: 'ncp',
+200 silly resolved     version: '0.4.2',
+200 silly resolved     author: { name: 'AvianFlu', email: 'charlie@charlieistheman.com' },
+200 silly resolved     description: 'Asynchronous recursive file copy utility.',
+200 silly resolved     bin: { ncp: './bin/ncp' },
+200 silly resolved     devDependencies: { vows: '0.6.x', rimraf: '1.0.x', 'read-dir-files': '0.0.x' },
+200 silly resolved     main: './lib/ncp.js',
+200 silly resolved     repository: { type: 'git', url: 'https://github.com/AvianFlu/ncp.git' },
+200 silly resolved     keywords: [ 'cli', 'copy' ],
+200 silly resolved     license: 'MIT',
+200 silly resolved     engine: { node: '>=0.4' },
+200 silly resolved     scripts: { test: 'vows --isolate --spec' },
+200 silly resolved     readme: '# ncp - Asynchronous recursive file & directory copying\n\n[![Build Status](https://secure.travis-ci.org/AvianFlu/ncp.png)](http://travis-ci.org/AvianFlu/ncp)\n\nThink `cp -r`, but pure node, and asynchronous.  `ncp` can be used both as a CLI tool and programmatically.\n\n## Command Line usage\n\nUsage is simple: `ncp [source] [dest] [--limit=concurrency limit]\n[--filter=filter] --stopOnErr`\n\nThe \'filter\' is a Regular Expression - matched files will be copied.\n\nThe \'concurrency limit\' is an integer that represents how many pending file system requests `ncp` has at a time.\n\n\'stopOnErr\' is a boolean flag that will tell `ncp` to stop immediately if any\nerrors arise, rather than attempting to continue while logging errors.\n\nIf there are no errors, `ncp` will output `done.` when complete.  If there are errors, the error messages will be logged to `stdout` and to `./ncp-debug.log`, and the copy operation will attempt to continue.\n\n## Programmatic usage\n\nProgrammatic usage of `ncp` is just as simple.  The only argument to the completion callback is a possible error.  \n\n```javascript\nvar ncp = require(\'ncp\').ncp;\n\nncp.limit = 16;\n\nncp(source, destination, function (err) {\n if (err) {\n   return console.error(err);\n }\n console.log(\'done!\');\n});\n```\n\nYou can also call ncp like `ncp(source, destination, options, callback)`. \n`options` should be a dictionary. Currently, such options are available:\n\n  * `options.filter` - a `RegExp` instance, against which each file name is\n  tested to determine whether to copy it or not, or a function taking single\n  parameter: copied file name, returning `true` or `false`, determining\n  whether to copy file or not.\n\n  * `options.transform` - a function: `function (read, write) { read.pipe(write) }`\n  used to apply streaming transforms while copying.\n\n  * `options.clobber` - boolean=true. if set to false, `ncp` will not overwrite \n  destination files that already exist.\n\nPlease open an issue if any bugs arise.  As always, I accept (working) pull requests, and refunds are available at `/dev/null`.\n',
+200 silly resolved     readmeFilename: 'README.md',
+200 silly resolved     bugs: { url: 'https://github.com/AvianFlu/ncp/issues' },
+200 silly resolved     _id: 'ncp@0.4.2',
+200 silly resolved     _from: 'ncp@0.4.2' },
+200 silly resolved   { name: 'adm-zip',
+200 silly resolved     version: '0.2.1',
+200 silly resolved     description: 'A Javascript implementation of zip for nodejs. Allows user to create or extract zip files both in memory or to/from disk',
+200 silly resolved     keywords: [ 'zip', 'methods', 'archive', 'unzip' ],
+200 silly resolved     homepage: 'http://github.com/cthackers/adm-zip',
+200 silly resolved     author:
+200 silly resolved      { name: 'Nasca Iacob',
+200 silly resolved        email: 'sy@another-d-mention.ro',
+200 silly resolved        url: 'https://github.com/cthackers' },
+200 silly resolved     bugs:
+200 silly resolved      { url: 'https://github.com/cthackers/adm-zip/issues',
+200 silly resolved        email: 'sy@another-d-mention.ro' },
+200 silly resolved     licenses: [ [Object] ],
+200 silly resolved     main: 'adm-zip.js',
+200 silly resolved     repository:
+200 silly resolved      { type: 'git',
+200 silly resolved        url: 'git://github.com/git@github.com:cthackers/adm-zip.git' },
+200 silly resolved     engines: { node: '>=0.3.0' },
+200 silly resolved     readme: '# ADM-ZIP for NodeJS\r\n\r\nADM-ZIP is a pure JavaScript implementation for zip data compression for [NodeJS](http://nodejs.org/). \r\n\r\n# Installation\r\n\r\nWith [npm](http://npmjs.org) do:\r\n\r\n    $ npm install adm-zip\r\n\t\r\n## What is it good for?\r\nThe library allows you to:\r\n\r\n* decompress zip files directly to disk or in memory buffers\r\n* compress files and store them to disk in .zip format or in compressed buffers\r\n* update content of/add new/delete files from an existing .zip\r\n\r\n# Dependencies\r\nThere are no other nodeJS libraries that ADM-ZIP is dependent of\r\n\r\n# Examples\r\n\r\n## Basic usage\r\n```javascript\r\n\r\n\tvar AdmZip = require(\'adm-zip\');\r\n\r\n\t// reading archives\r\n\tvar zip = new AdmZip("./my_file.zip");\r\n\tvar zipEntries = zip.getEntries(); // an array of ZipEntry records\r\n\r\n\tzipEntries.forEach(function(zipEntry) {\r\n\t    console.log(zipEntry.toString()); // outputs zip entries information\r\n\t\tif (zipEntry.entryName == "my_file.txt") {\r\n\t\t     console.log(zipEntry.data.toString(\'utf8\')); \r\n\t\t}\r\n\t});\r\n\t// outputs the content of some_folder/my_file.txt\r\n\tconsole.log(zip.readAsText("some_folder/my_file.txt")); \r\n\t// extracts the specified file to the specified location\r\n\tzip.extractEntryTo(/*entry name*/"some_folder/my_file.txt", /*target path*/"/home/me/tempfolder", /*overwrite*/true)\r\n\t// extracts everything\r\n\tzip.extractAllTo(/*target path*/"/home/me/zipcontent/", /*overwrite*/true);\r\n\t\r\n\t\r\n\t// creating archives\r\n\tvar zip = new AdmZip();\r\n\t\r\n\t// add file directly\r\n\tzip.addFile("test.txt", new Buffer("inner content of the file"), "entry comment goes here");\r\n\t// add local file\r\n\tzip.addLocalFile("/home/me/some_picture.png");\r\n\t// get everything as a buffer\r\n\tvar willSendthis = zip.toBuffer();\r\n\t// or write everything to disk\r\n\tzip.writeZip(/*target file name*/"/home/me/files.zip");\r\n\t\r\n\t\r\n\t// ... more examples in the wiki\r\n```\r\n\r\nFor more detailed information please check out the [wiki](https://github.com/cthackers/adm-zip/wiki).\n\n[![build status](https://secure.travis-ci.org/cthackers/adm-zip.png)](http://travis-ci.org/cthackers/adm-zip)',
+200 silly resolved     readmeFilename: 'README.md',
+200 silly resolved     _id: 'adm-zip@0.2.1',
+200 silly resolved     _from: 'adm-zip@0.2.1' },
+200 silly resolved   { name: 'npmconf',
+200 silly resolved     version: '0.0.24',
+200 silly resolved     description: 'The config thing npm uses',
+200 silly resolved     main: 'npmconf.js',
+200 silly resolved     directories: { test: 'test' },
+200 silly resolved     dependencies:
+200 silly resolved      { 'config-chain': '~1.1.1',
+200 silly resolved        inherits: '~1.0.0',
+200 silly resolved        once: '~1.1.1',
+200 silly resolved        mkdirp: '~0.3.3',
+200 silly resolved        osenv: '0.0.3',
+200 silly resolved        nopt: '2',
+200 silly resolved        semver: '~1.1.0',
+200 silly resolved        ini: '~1.1.0' },
+200 silly resolved     devDependencies: {},
+200 silly resolved     scripts: { test: 'tap test/*.js' },
+200 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/npmconf' },
+200 silly resolved     keywords: [ 'npm', 'config', 'config-chain', 'conf', 'ini' ],
+200 silly resolved     author:
+200 silly resolved      { name: 'Isaac Z. Schlueter',
+200 silly resolved        email: 'i@izs.me',
+200 silly resolved        url: 'http://blog.izs.me' },
+200 silly resolved     license: 'BSD',
+200 silly resolved     readme: '# npmconf\n\nThe config thing npm uses\n\nIf you are interested in interacting with the config settings that npm\nuses, then use this module.\n\nHowever, if you are writing a new Node.js program, and want\nconfiguration functionality similar to what npm has, but for your\nown thing, then I\'d recommend using [rc](https://github.com/dominictarr/rc),\nwhich is probably what you want.\n\nIf I were to do it all over again, that\'s what I\'d do for npm.  But,\nalas, there are many systems depending on many of the particulars of\nnpm\'s configuration setup, so it\'s not worth the cost of changing.\n\n## USAGE\n\n```javascript\nvar npmconf = require(\'npmconf\')\n\n// pass in the cli options that you read from the cli\n// or whatever top-level configs you want npm to use for now.\nnpmconf.load({some:\'configs\'}, function (er, conf) {\n  // do stuff with conf\n  conf.get(\'some\', \'cli\') // \'configs\'\n  conf.get(\'username\') // \'joebobwhatevers\'\n  conf.set(\'foo\', \'bar\', \'user\')\n  conf.save(\'user\', function (er) {\n    // foo = bar is now saved to ~/.npmrc or wherever\n  })\n})\n```\n',
+200 silly resolved     readmeFilename: 'README.md',
+200 silly resolved     bugs: { url: 'https://github.com/isaacs/npmconf/issues' },
+200 silly resolved     _id: 'npmconf@0.0.24',
+200 silly resolved     _from: 'npmconf@0.0.24' },
+200 silly resolved   { name: 'mkdirp',
+200 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+200 silly resolved     version: '0.3.5',
+200 silly resolved     author:
+200 silly resolved      { name: 'James Halliday',
+200 silly resolved        email: 'mail@substack.net',
+200 silly resolved        url: 'http://substack.net' },
+200 silly resolved     main: './index',
+200 silly resolved     keywords: [ 'mkdir', 'directory' ],
+200 silly resolved     repository:
+200 silly resolved      { type: 'git',
+200 silly resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+200 silly resolved     scripts: { test: 'tap test/*.js' },
+200 silly resolved     devDependencies: { tap: '~0.4.0' },
+200 silly resolved     license: 'MIT',
+200 silly resolved     readme: '# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require(\'mkdirp\');\n    \nmkdirp(\'/tmp/foo/bar/baz\', function (err) {\n    if (err) console.error(err)\n    else console.log(\'pow!\')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require(\'mkdirp\');\n```\n\n## mkdirp(dir, mode, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\n## mkdirp.sync(dir, mode)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\n# license\n\nMIT\n',
+200 silly resolved     readmeFilename: 'readme.markdown',
+200 silly resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+200 silly resolved     _id: 'mkdirp@0.3.5',
+200 silly resolved     _from: 'mkdirp@0.3.5' },
+200 silly resolved   { name: 'kew',
+200 silly resolved     description: 'a lightweight promise library for node',
+200 silly resolved     version: '0.1.7',
+200 silly resolved     homepage: 'https://github.com/Obvious/kew',
+200 silly resolved     authors: [ 'Jeremy Stanley <github@azulus.com> (https://github.com/azulus)' ],
+200 silly resolved     contributors: [],
+200 silly resolved     keywords: [ 'kew', 'promises' ],
+200 silly resolved     main: './kew.js',
+200 silly resolved     repository: { type: 'git', url: 'https://github.com/Obvious/kew.git' },
+200 silly resolved     dependencies: {},
+200 silly resolved     devDependencies: { nodeunit: '0.7.4' },
+200 silly resolved     scripts: { test: './node_modules/nodeunit/bin/nodeunit test' },
+200 silly resolved     readme: 'kew: a lightweight (and super fast) promise/deferred framework for node.js\n==================================\n\n**kew** is a lightweight promise framework with an aim of providing a base set of functionality similar to that provided by the [Q library](https://github.com/kriskowal/q "Q").\n\nA few answers (for a few questions)\n-------\n\n*Why\'d we write it?*\n\nDuring our initial usage of **Q** we found that it was consuming 80% of the cpu under load (primarily in chained database callbacks). We spent some time looking at patching **Q** and ultimately found that creating our own lightweight library for server-usage would suit our needs better than figuring out how to make a large cross-platform library more performant on one very specific platform.\n\n*So this does everything Q does?*\n\nNope! **Q** is still an awesome library and does *way* more than **kew**. We support a tiny subset of the **Q** functionality (the subset that we happen to use in our actual use cases).\n\nWhat are Promises?\n-------\n\nAt its core, a *Promise* is a promise to return a value at some point in the future. A *Promise* represents a value that will be (or may return an error if something goes wrong). *Promises* heavily reduce the complexity of asynchronous coding in node.js-like environments. Example:\n\n```javascript\n// assuming the getUrlContent() function exists and retrieves the content of a url\nvar htmlPromise = getUrlContent(myUrl)\n\n// we can then filter that through an http parser (our imaginary parseHtml() function) asynchronously (or maybe synchronously, who knows)\nvar tagsPromise = htmlPromise.then(parseHtml)\n\n// and then filter it through another function (getLinks()) which retrieves only the link tags\nvar linksPromise = tagsPromise.then(getLinks)\n\n// and then parses the actual urls from the links (using parseUrlsFromLinks())\nvar urlsPromise = linksPromise.then(linksPromise)\n\n// finally, we have a promise that should only provide us with the urls and will run once all the previous steps have ran\nurlsPromise.then(function (urls) {\n  // do something with the urls\n})\n```\n\nHow do I use **kew**?\n-------\n\nAs a precursor to all the examples, the following code must be at the top of your page:\n\n```javascript\nvar Q = require(\'kew\')\n```\n\n### Convert a literal into a promise\n\nThe easiest way to start a promise chain is by creating a new promise with a specified literal using Q.resolve() or Q.reject()\n\n```javascript\n// create a promise which passes a value to the next then() call\nvar successPromise = Q.resolve(val)\n\n// create a promise which throws an error to be caught by the next fail() call\nvar failPromise = Q.reject(err)\n```\n\nIn addition, you can create deferreds which can be used if you need to create a promise but resolve it later:\n\n```javascript\n// create the deferreds\nvar successDefer = Q.defer()\nvar failDefer = Q.defer()\n\n// resolve or reject the defers in 1 second\nsetTimeout(function () {\n  successDefer.resolve("ok")\n  failDefer.reject(new Error("this failed"))\n}, 1000)\n\n// extract promises from the deferreds\nvar successPromise = successDefer.promise\nvar failPromise = failDefer.promise\n```\n\nIf you have a node-style callback (taking an **Error** as the first parameter and a response as the second), you can call the magic `makeNodeResolver()` function on a defer to allow the defer to handle the callbacks:\n\n```javascript\n// create the deferred\nvar defer = Q.defer()\n\n// some node-style function\ngetObjectFromDatabase(myObjectId, defer.makeNodeResolver())\n\n// grab the output\ndefer.promise\n  .then(function (obj) {\n    // successfully retrieved the object\n  })\n  .fail(function (e) {\n    // failed retrieving the object\n  })\n```\n\n### Handling successful results with `.then()`\n\nWhen a promise is resolved, you may call the `.then()` method to retrieve the value of the promise:\n\n```javascript\npromise.then(function (result) {\n  // do something with the result here\n})\n```\n\n`.then()` will in turn return a promise which will return the results of whatever it returns (asynchronously or not), allowing it to be chained indefinitely:\n\n```javascript\nQ.resolve(\'a\')\n  .then(function (result) {\n    return result + \'b\'\n  })\n  .then(function (result) {\n    return result + \'c\'\n  })\n  .then(function (result) {\n    // result should be \'abc\'\n  })\n```\n\nIn addition, `.then()` calls may return promises themselves, allowing for complex nesting of asynchronous calls in a flat manner:\n\n```javascript\nvar htmlPromise = getUrlContent(myUrl)\n\nvar tagsPromise = htmlPromise.then(function (html) {\n  if (!validHtml(html)) throw new Error("Invalid HTML")\n\n  // pretend that parseHtml() returns a promise and is asynchronous\n  return parseHtml(html)\n})\n```\n\n### Handling errors with `.fail()`\n\nIf a promise is rejected for some reason, you may handle the failure case with the `.fail()` function:\n\n```javascript\ngetObjectPromise\n  .fail(function (e) {\n    console.error("Failed to retrieve object", e)\n  })\n```\n\nLike `.then()`, `.fail()` also returns a promise. If the `.fail()` call does not throw an error, it will pass the return value of the `.fail()` handler to any `.then()` calls chained to it:\n\n```javascript\ngetObjectPromise\n  .fail(function (e) {\n    return retryGetObject(objId)\n  })\n  .then(function (obj) {\n    // yay, we received an object\n  })\n  .fail(function (e) {\n    // the retry failed :(\n    console.error("Retrieving the object \'" + objId + "\' failed")\n  })\n})\n```\n\nIf you\'ve reached the end of your promise chain, you may call `.end()` which signifies that the promise chain is ended and any errors should be thrown in whatever scope the code is currently in:\n\n```javascript\ngetObjectPromise\n  // this will throw an error to the uncaught exception handler if the getObjectPromise call is asynchronous\n  .end()\n```\n\n### `.fin()` when things are finished\n\nYou may attach a handler to a promise which will be ran regardless of whether the promise was resolved or rejected (but will only run upon completion). This is useful in the cases where you may have set up resources to run a request and wish to tear them down afterwards. `.fin()` will return the promise it is called upon:\n\n```javascript\nvar connection = db.connect()\n\nvar itemPromise = db.getItem(itemId)\n  .fin(function () {\n    db.close()\n  })\n```\n\nOther utility methods\n-------\n\nThere\'s only one utility method as of now:\n\n### `.all()` for many things\n\nIf you\'re waiting for multiple promises to return, you may pass them (mixed in with literals if you desire) into `.all()` which will create a promise that resolves successfully with an array of the results of the promises:\n\n```javascript\nvar promises = []\npromises.push(getUrlContent(url1))\npromises.push(getUrlContent(url2))\npromises.push(getUrlContent(url3))\n\nQ.all(promises)\n  .then(function (content) {\n    // content[0] === content for url 1\n    // content[1] === content for url 2\n    // content[2] === content for url 3\n  })\n```\n\nIf any of the promises fail, Q.all will fail as well (so make sure to guard your promises with a `.fail()` call beforehand if you don\'t care whether they succeed or not):\n\n```javascript\nvar promises = []\npromises.push(getUrlContent(url1))\npromises.push(getUrlContent(url2))\npromises.push(getUrlContent(url3))\n\nQ.all(promises)\n  .fail(function (e) {\n    console.log("Failed retrieving a url", e)\n  })\n```\n\nContributing\n------------\n\nQuestions, comments, bug reports, and pull requests are all welcome.\nSubmit them at [the project on GitHub](https://github.com/Obvious/kew/).\n\nBug reports that include steps-to-reproduce (including code) are the\nbest. Even better, make them in the form of pull requests that update\nthe test suite. Thanks!\n\n\nAuthor\n------\n\n[Jeremy Stanley](https://github.com/azulus)\nsupported by\n[The Obvious Corporation](http://obvious.com/).\n\n\nLicense\n-------\n\nCopyright 2013 [The Obvious Corporation](http://obvious.com/).\n\nLicensed under the Apache License, Version 2.0.\nSee the top-level file `LICENSE.TXT` and\n(http://www.apache.org/licenses/LICENSE-2.0).\n',
+200 silly resolved     readmeFilename: 'README.md',
+200 silly resolved     bugs: { url: 'https://github.com/Obvious/kew/issues' },
+200 silly resolved     _id: 'kew@0.1.7',
+200 silly resolved     _from: 'kew@~0.1.7' },
+200 silly resolved   { name: 'rimraf',
+200 silly resolved     version: '2.0.3',
+200 silly resolved     main: 'rimraf.js',
+200 silly resolved     description: 'A deep deletion module for node (like `rm -rf`)',
+200 silly resolved     author:
+200 silly resolved      { name: 'Isaac Z. Schlueter',
+200 silly resolved        email: 'i@izs.me',
+200 silly resolved        url: 'http://blog.izs.me/' },
+200 silly resolved     license:
+200 silly resolved      { type: 'MIT',
+200 silly resolved        url: 'https://github.com/isaacs/rimraf/raw/master/LICENSE' },
+200 silly resolved     optionalDependencies: { 'graceful-fs': '~1.1' },
+200 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/rimraf.git' },
+200 silly resolved     scripts: { test: 'cd test && bash run.sh' },
+200 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+200 silly resolved     readme: 'A `rm -rf` for node.\n\nInstall with `npm install rimraf`, or just drop rimraf.js somewhere.\n\n## API\n\n`rimraf(f, callback)`\n\nThe callback will be called with an error if there is one.  Certain\nerrors are handled for you:\n\n* `EBUSY` -  rimraf will back off a maximum of opts.maxBusyTries times\n  before giving up.\n* `EMFILE` - If too many file descriptors get opened, rimraf will\n  patiently wait until more become available.\n\n\n## rimraf.sync\n\nIt can remove stuff synchronously, too.  But that\'s not so good.  Use\nthe async API.  It\'s better.\n',
+200 silly resolved     readmeFilename: 'README.md',
+200 silly resolved     bugs: { url: 'https://github.com/isaacs/rimraf/issues' },
+200 silly resolved     dependencies: { 'graceful-fs': '~1.1' },
+200 silly resolved     _id: 'rimraf@2.0.3',
+200 silly resolved     _from: 'rimraf@~2.0.2' } ]
+201 info install ncp@0.4.2 into /usr/lib/node_modules/phantomjs
+202 info install adm-zip@0.2.1 into /usr/lib/node_modules/phantomjs
+203 info install npmconf@0.0.24 into /usr/lib/node_modules/phantomjs
+204 info install mkdirp@0.3.5 into /usr/lib/node_modules/phantomjs
+205 info install kew@0.1.7 into /usr/lib/node_modules/phantomjs
+206 info install rimraf@2.0.3 into /usr/lib/node_modules/phantomjs
+207 info installOne ncp@0.4.2
+208 info installOne adm-zip@0.2.1
+209 info installOne npmconf@0.0.24
+210 info installOne mkdirp@0.3.5
+211 info installOne kew@0.1.7
+212 info installOne rimraf@2.0.3
+213 info /usr/lib/node_modules/phantomjs/node_modules/ncp unbuild
+214 info /usr/lib/node_modules/phantomjs/node_modules/adm-zip unbuild
+215 info /usr/lib/node_modules/phantomjs/node_modules/npmconf unbuild
+216 info /usr/lib/node_modules/phantomjs/node_modules/mkdirp unbuild
+217 info /usr/lib/node_modules/phantomjs/node_modules/kew unbuild
+218 info /usr/lib/node_modules/phantomjs/node_modules/rimraf unbuild
+219 verbose tar unpack /root/.npm/ncp/0.4.2/package.tgz
+220 silly lockFile 9e5f7c9e-dules-phantomjs-node-modules-ncp tar:///usr/lib/node_modules/phantomjs/node_modules/ncp
+221 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/ncp /root/.npm/9e5f7c9e-dules-phantomjs-node-modules-ncp.lock
+222 silly lockFile be35f090-r-root-npm-ncp-0-4-2-package-tgz tar:///root/.npm/ncp/0.4.2/package.tgz
+223 verbose lock tar:///root/.npm/ncp/0.4.2/package.tgz /root/.npm/be35f090-r-root-npm-ncp-0-4-2-package-tgz.lock
+224 verbose tar unpack /root/.npm/adm-zip/0.2.1/package.tgz
+225 silly lockFile 5c270e98-s-phantomjs-node-modules-adm-zip tar:///usr/lib/node_modules/phantomjs/node_modules/adm-zip
+226 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/adm-zip /root/.npm/5c270e98-s-phantomjs-node-modules-adm-zip.lock
+227 silly lockFile 6364bd12-ot-npm-adm-zip-0-2-1-package-tgz tar:///root/.npm/adm-zip/0.2.1/package.tgz
+228 verbose lock tar:///root/.npm/adm-zip/0.2.1/package.tgz /root/.npm/6364bd12-ot-npm-adm-zip-0-2-1-package-tgz.lock
+229 verbose tar unpack /root/.npm/npmconf/0.0.24/package.tgz
+230 silly lockFile 9013d88d-s-phantomjs-node-modules-npmconf tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf
+231 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf /root/.npm/9013d88d-s-phantomjs-node-modules-npmconf.lock
+232 silly lockFile 79d599fd-t-npm-npmconf-0-0-24-package-tgz tar:///root/.npm/npmconf/0.0.24/package.tgz
+233 verbose lock tar:///root/.npm/npmconf/0.0.24/package.tgz /root/.npm/79d599fd-t-npm-npmconf-0-0-24-package-tgz.lock
+234 verbose tar unpack /root/.npm/mkdirp/0.3.5/package.tgz
+235 silly lockFile bbfd3898-es-phantomjs-node-modules-mkdirp tar:///usr/lib/node_modules/phantomjs/node_modules/mkdirp
+236 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/mkdirp /root/.npm/bbfd3898-es-phantomjs-node-modules-mkdirp.lock
+237 silly lockFile 2b3d2d2d-oot-npm-mkdirp-0-3-5-package-tgz tar:///root/.npm/mkdirp/0.3.5/package.tgz
+238 verbose lock tar:///root/.npm/mkdirp/0.3.5/package.tgz /root/.npm/2b3d2d2d-oot-npm-mkdirp-0-3-5-package-tgz.lock
+239 verbose tar unpack /root/.npm/kew/0.1.7/package.tgz
+240 silly lockFile 4cda44e6-dules-phantomjs-node-modules-kew tar:///usr/lib/node_modules/phantomjs/node_modules/kew
+241 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/kew /root/.npm/4cda44e6-dules-phantomjs-node-modules-kew.lock
+242 silly lockFile bd5fb8b3-r-root-npm-kew-0-1-7-package-tgz tar:///root/.npm/kew/0.1.7/package.tgz
+243 verbose lock tar:///root/.npm/kew/0.1.7/package.tgz /root/.npm/bd5fb8b3-r-root-npm-kew-0-1-7-package-tgz.lock
+244 verbose tar unpack /root/.npm/rimraf/2.0.3/package.tgz
+245 silly lockFile 5d0a8545-es-phantomjs-node-modules-rimraf tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf
+246 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf /root/.npm/5d0a8545-es-phantomjs-node-modules-rimraf.lock
+247 silly lockFile 5f351284-oot-npm-rimraf-2-0-3-package-tgz tar:///root/.npm/rimraf/2.0.3/package.tgz
+248 verbose lock tar:///root/.npm/rimraf/2.0.3/package.tgz /root/.npm/5f351284-oot-npm-rimraf-2-0-3-package-tgz.lock
+249 silly gunzTarPerm modes [ '755', '644' ]
+250 silly gunzTarPerm modes [ '755', '644' ]
+251 silly gunzTarPerm modes [ '755', '644' ]
+252 silly gunzTarPerm modes [ '755', '644' ]
+253 silly gunzTarPerm modes [ '755', '644' ]
+254 silly gunzTarPerm modes [ '755', '644' ]
+255 silly gunzTarPerm extractEntry package.json
+256 silly gunzTarPerm extractEntry package.json
+257 silly gunzTarPerm extractEntry package.json
+258 silly gunzTarPerm extractEntry package.json
+259 silly gunzTarPerm extractEntry package.json
+260 silly gunzTarPerm extractEntry package.json
+261 silly gunzTarPerm extractEntry .npmignore
+262 silly gunzTarPerm extractEntry README.md
+263 silly gunzTarPerm extractEntry README.md
+264 silly gunzTarPerm extractEntry zipFile.js
+265 silly gunzTarPerm extractEntry .npmignore
+266 silly gunzTarPerm extractEntry README.md
+267 silly gunzTarPerm extractEntry .npmignore
+268 silly gunzTarPerm extractEntry LICENSE
+269 silly gunzTarPerm extractEntry .npmignore
+270 silly gunzTarPerm extractEntry README.md
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm extractEntry LICENSE
+273 silly gunzTarPerm extractEntry .travis.yml
+274 silly gunzTarPerm extractEntry LICENSE.md
+275 silly gunzTarPerm extractEntry rimraf.js
+276 silly gunzTarPerm extractEntry AUTHORS
+277 silly gunzTarPerm extractEntry adm-zip.js
+278 silly gunzTarPerm extractEntry sandbox.js
+279 silly gunzTarPerm extractEntry zipEntry.js
+280 silly gunzTarPerm extractEntry .travis.yml
+281 silly gunzTarPerm extractEntry headers/dataHeader.js
+282 silly gunzTarPerm extractEntry headers/entryHeader.js
+283 silly gunzTarPerm extractEntry headers/index.js
+284 silly gunzTarPerm extractEntry headers/mainHeader.js
+285 silly gunzTarPerm extractEntry util/constants.js
+286 silly gunzTarPerm extractEntry util/errors.js
+287 silly gunzTarPerm extractEntry util/fattr.js
+288 silly gunzTarPerm extractEntry util/index.js
+289 silly gunzTarPerm extractEntry util/utils.js
+290 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+291 silly gunzTarPerm extractEntry methods/deflater.js
+292 silly gunzTarPerm extractEntry methods/index.js
+293 silly gunzTarPerm extractEntry methods/inflater.js
+294 silly gunzTarPerm extractEntry LICENSE
+295 silly gunzTarPerm extractEntry config-defs.js
+296 silly gunzTarPerm extractEntry index.js
+297 silly gunzTarPerm extractEntry .travis.yml
+298 silly gunzTarPerm extractEntry kew.js
+299 silly gunzTarPerm extractEntry LICENSE.TXT
+300 silly gunzTarPerm extractEntry test/chain.js
+301 silly gunzTarPerm extractEntry test/context.js
+302 silly gunzTarPerm extractEntry test/defer.js
+303 silly gunzTarPerm extractEntry test/static.js
+304 silly gunzTarPerm extractEntry bin/ncp
+305 silly gunzTarPerm extractEntry lib/ncp.js
+306 silly gunzTarPerm extractEntry npmconf.js
+307 silly gunzTarPerm extractEntry examples/pow.js
+308 silly gunzTarPerm extractEntry readme.markdown
+309 silly gunzTarPerm extractEntry test/test-async.js
+310 silly gunzTarPerm extractEntry test/test-fiber.js
+311 silly gunzTarPerm extractEntry test/ncp-test.js
+312 silly gunzTarPerm extractEntry test/fixtures/src/a
+313 silly gunzTarPerm extractEntry test/fixtures/src/b
+314 silly gunzTarPerm extractEntry test/fixtures/src/c
+315 silly gunzTarPerm extractEntry test/fixtures/src/d
+316 silly gunzTarPerm extractEntry test/fixtures/src/e
+317 silly gunzTarPerm extractEntry test/fixtures/src/f
+318 silly gunzTarPerm extractEntry test/fixtures/src/sub/a
+319 silly gunzTarPerm extractEntry test/fixtures/src/sub/b
+320 silly gunzTarPerm extractEntry test/00-setup.js
+321 silly gunzTarPerm extractEntry test/basic.js
+322 silly gunzTarPerm extractEntry test/chmod.js
+323 silly gunzTarPerm extractEntry test/perm.js
+324 silly gunzTarPerm extractEntry test/test-sync.js
+325 silly gunzTarPerm extractEntry test/run.sh
+326 silly gunzTarPerm extractEntry test/builtin.js
+327 silly gunzTarPerm extractEntry test/save.js
+328 silly gunzTarPerm extractEntry test/perm_sync.js
+329 silly gunzTarPerm extractEntry test/race.js
+330 silly gunzTarPerm extractEntry test/mkdirp.js
+331 silly gunzTarPerm extractEntry test/return.js
+332 silly gunzTarPerm extractEntry test/return_sync.js
+333 silly gunzTarPerm extractEntry test/root.js
+334 silly gunzTarPerm extractEntry test/sync.js
+335 silly gunzTarPerm extractEntry test/umask.js
+336 silly gunzTarPerm extractEntry test/clobber.js
+337 silly gunzTarPerm extractEntry test/umask_sync.js
+338 silly gunzTarPerm extractEntry test/rel.js
+339 silly gunzTarPerm extractEntry test/setup.sh
+340 silly gunzTarPerm extractEntry test/fixtures/builtin
+341 silly gunzTarPerm extractEntry test/fixtures/globalconfig
+342 silly gunzTarPerm extractEntry test/fixtures/userconfig
+343 silly lockFile 5d0a8545-es-phantomjs-node-modules-rimraf tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf
+344 silly lockFile 5d0a8545-es-phantomjs-node-modules-rimraf tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf
+345 silly lockFile 5f351284-oot-npm-rimraf-2-0-3-package-tgz tar:///root/.npm/rimraf/2.0.3/package.tgz
+346 silly lockFile 5f351284-oot-npm-rimraf-2-0-3-package-tgz tar:///root/.npm/rimraf/2.0.3/package.tgz
+347 info preinstall rimraf@2.0.3
+348 verbose readDependencies using package.json deps
+349 verbose readDependencies using package.json deps
+350 verbose cache add [ 'graceful-fs@~1.1', null ]
+351 verbose cache add name=undefined spec="graceful-fs@~1.1" args=["graceful-fs@~1.1",null]
+352 verbose parsed url { protocol: null,
+352 verbose parsed url   slashes: null,
+352 verbose parsed url   auth: null,
+352 verbose parsed url   host: null,
+352 verbose parsed url   port: null,
+352 verbose parsed url   hostname: null,
+352 verbose parsed url   hash: null,
+352 verbose parsed url   search: null,
+352 verbose parsed url   query: null,
+352 verbose parsed url   pathname: 'graceful-fs@~1.1',
+352 verbose parsed url   path: 'graceful-fs@~1.1',
+352 verbose parsed url   href: 'graceful-fs@~1.1' }
+353 verbose cache add name="graceful-fs" spec="~1.1" args=["graceful-fs","~1.1"]
+354 verbose parsed url { protocol: null,
+354 verbose parsed url   slashes: null,
+354 verbose parsed url   auth: null,
+354 verbose parsed url   host: null,
+354 verbose parsed url   port: null,
+354 verbose parsed url   hostname: null,
+354 verbose parsed url   hash: null,
+354 verbose parsed url   search: null,
+354 verbose parsed url   query: null,
+354 verbose parsed url   pathname: '~1.1',
+354 verbose parsed url   path: '~1.1',
+354 verbose parsed url   href: '~1.1' }
+355 verbose addNamed [ 'graceful-fs', '~1.1' ]
+356 verbose addNamed [ null, '>=1.1.0-0 <1.2.0-0' ]
+357 silly lockFile 0502dd56-graceful-fs-1-1 graceful-fs@~1.1
+358 verbose lock graceful-fs@~1.1 /root/.npm/0502dd56-graceful-fs-1-1.lock
+359 silly addNameRange { name: 'graceful-fs',
+359 silly addNameRange   range: '>=1.1.0-0 <1.2.0-0',
+359 silly addNameRange   hasData: false }
+360 verbose url raw graceful-fs
+361 verbose url resolving [ 'https://registry.npmjs.org/', './graceful-fs' ]
+362 verbose url resolved https://registry.npmjs.org/graceful-fs
+363 info trying registry request attempt 1 at 11:54:08
+364 verbose etag "8LXHQOPONJROBW3CL63VPENA7"
+365 http GET https://registry.npmjs.org/graceful-fs
+366 silly lockFile 9e5f7c9e-dules-phantomjs-node-modules-ncp tar:///usr/lib/node_modules/phantomjs/node_modules/ncp
+367 silly lockFile 9e5f7c9e-dules-phantomjs-node-modules-ncp tar:///usr/lib/node_modules/phantomjs/node_modules/ncp
+368 silly lockFile be35f090-r-root-npm-ncp-0-4-2-package-tgz tar:///root/.npm/ncp/0.4.2/package.tgz
+369 silly lockFile be35f090-r-root-npm-ncp-0-4-2-package-tgz tar:///root/.npm/ncp/0.4.2/package.tgz
+370 info preinstall ncp@0.4.2
+371 silly lockFile 4cda44e6-dules-phantomjs-node-modules-kew tar:///usr/lib/node_modules/phantomjs/node_modules/kew
+372 silly lockFile 4cda44e6-dules-phantomjs-node-modules-kew tar:///usr/lib/node_modules/phantomjs/node_modules/kew
+373 silly lockFile bd5fb8b3-r-root-npm-kew-0-1-7-package-tgz tar:///root/.npm/kew/0.1.7/package.tgz
+374 silly lockFile bd5fb8b3-r-root-npm-kew-0-1-7-package-tgz tar:///root/.npm/kew/0.1.7/package.tgz
+375 verbose readDependencies using package.json deps
+376 verbose readDependencies using package.json deps
+377 silly resolved []
+378 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/ncp
+379 info build /usr/lib/node_modules/phantomjs/node_modules/ncp
+380 verbose linkStuff [ true,
+380 verbose linkStuff   '/usr/lib/node_modules',
+380 verbose linkStuff   false,
+380 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules' ]
+381 info linkStuff ncp@0.4.2
+382 silly lockFile 9013d88d-s-phantomjs-node-modules-npmconf tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf
+383 silly lockFile 9013d88d-s-phantomjs-node-modules-npmconf tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf
+384 info preinstall kew@0.1.7
+385 silly lockFile 79d599fd-t-npm-npmconf-0-0-24-package-tgz tar:///root/.npm/npmconf/0.0.24/package.tgz
+386 silly lockFile 79d599fd-t-npm-npmconf-0-0-24-package-tgz tar:///root/.npm/npmconf/0.0.24/package.tgz
+387 verbose readDependencies using package.json deps
+388 verbose readDependencies using package.json deps
+389 silly resolved []
+390 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/kew
+391 info build /usr/lib/node_modules/phantomjs/node_modules/kew
+392 verbose linkStuff [ true,
+392 verbose linkStuff   '/usr/lib/node_modules',
+392 verbose linkStuff   false,
+392 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules' ]
+393 info linkStuff kew@0.1.7
+394 info preinstall npmconf@0.0.24
+395 verbose linkBins ncp@0.4.2
+396 verbose link bins [ { ncp: './bin/ncp' },
+396 verbose link bins   '/usr/lib/node_modules/phantomjs/node_modules/.bin',
+396 verbose link bins   false ]
+397 verbose linkMans ncp@0.4.2
+398 verbose rebuildBundles ncp@0.4.2
+399 verbose readDependencies using package.json deps
+400 verbose readDependencies using package.json deps
+401 verbose cache add [ 'once@~1.1.1', null ]
+402 verbose cache add name=undefined spec="once@~1.1.1" args=["once@~1.1.1",null]
+403 verbose parsed url { protocol: null,
+403 verbose parsed url   slashes: null,
+403 verbose parsed url   auth: null,
+403 verbose parsed url   host: null,
+403 verbose parsed url   port: null,
+403 verbose parsed url   hostname: null,
+403 verbose parsed url   hash: null,
+403 verbose parsed url   search: null,
+403 verbose parsed url   query: null,
+403 verbose parsed url   pathname: 'once@~1.1.1',
+403 verbose parsed url   path: 'once@~1.1.1',
+403 verbose parsed url   href: 'once@~1.1.1' }
+404 verbose cache add name="once" spec="~1.1.1" args=["once","~1.1.1"]
+405 verbose parsed url { protocol: null,
+405 verbose parsed url   slashes: null,
+405 verbose parsed url   auth: null,
+405 verbose parsed url   host: null,
+405 verbose parsed url   port: null,
+405 verbose parsed url   hostname: null,
+405 verbose parsed url   hash: null,
+405 verbose parsed url   search: null,
+405 verbose parsed url   query: null,
+405 verbose parsed url   pathname: '~1.1.1',
+405 verbose parsed url   path: '~1.1.1',
+405 verbose parsed url   href: '~1.1.1' }
+406 verbose addNamed [ 'once', '~1.1.1' ]
+407 verbose addNamed [ null, '>=1.1.1-0 <1.2.0-0' ]
+408 silly lockFile 062b4488-once-1-1-1 once@~1.1.1
+409 verbose lock once@~1.1.1 /root/.npm/062b4488-once-1-1-1.lock
+410 verbose cache add [ 'semver@~1.1.0', null ]
+411 verbose cache add name=undefined spec="semver@~1.1.0" args=["semver@~1.1.0",null]
+412 verbose parsed url { protocol: null,
+412 verbose parsed url   slashes: null,
+412 verbose parsed url   auth: null,
+412 verbose parsed url   host: null,
+412 verbose parsed url   port: null,
+412 verbose parsed url   hostname: null,
+412 verbose parsed url   hash: null,
+412 verbose parsed url   search: null,
+412 verbose parsed url   query: null,
+412 verbose parsed url   pathname: 'semver@~1.1.0',
+412 verbose parsed url   path: 'semver@~1.1.0',
+412 verbose parsed url   href: 'semver@~1.1.0' }
+413 verbose cache add name="semver" spec="~1.1.0" args=["semver","~1.1.0"]
+414 verbose parsed url { protocol: null,
+414 verbose parsed url   slashes: null,
+414 verbose parsed url   auth: null,
+414 verbose parsed url   host: null,
+414 verbose parsed url   port: null,
+414 verbose parsed url   hostname: null,
+414 verbose parsed url   hash: null,
+414 verbose parsed url   search: null,
+414 verbose parsed url   query: null,
+414 verbose parsed url   pathname: '~1.1.0',
+414 verbose parsed url   path: '~1.1.0',
+414 verbose parsed url   href: '~1.1.0' }
+415 verbose addNamed [ 'semver', '~1.1.0' ]
+416 verbose addNamed [ null, '>=1.1.0-0 <1.2.0-0' ]
+417 silly lockFile 384d7ac7-semver-1-1-0 semver@~1.1.0
+418 verbose lock semver@~1.1.0 /root/.npm/384d7ac7-semver-1-1-0.lock
+419 verbose cache add [ 'osenv@0.0.3', null ]
+420 verbose cache add name=undefined spec="osenv@0.0.3" args=["osenv@0.0.3",null]
+421 verbose parsed url { protocol: null,
+421 verbose parsed url   slashes: null,
+421 verbose parsed url   auth: null,
+421 verbose parsed url   host: null,
+421 verbose parsed url   port: null,
+421 verbose parsed url   hostname: null,
+421 verbose parsed url   hash: null,
+421 verbose parsed url   search: null,
+421 verbose parsed url   query: null,
+421 verbose parsed url   pathname: 'osenv@0.0.3',
+421 verbose parsed url   path: 'osenv@0.0.3',
+421 verbose parsed url   href: 'osenv@0.0.3' }
+422 verbose cache add name="osenv" spec="0.0.3" args=["osenv","0.0.3"]
+423 verbose parsed url { protocol: null,
+423 verbose parsed url   slashes: null,
+423 verbose parsed url   auth: null,
+423 verbose parsed url   host: null,
+423 verbose parsed url   port: null,
+423 verbose parsed url   hostname: null,
+423 verbose parsed url   hash: null,
+423 verbose parsed url   search: null,
+423 verbose parsed url   query: null,
+423 verbose parsed url   pathname: '0.0.3',
+423 verbose parsed url   path: '0.0.3',
+423 verbose parsed url   href: '0.0.3' }
+424 verbose addNamed [ 'osenv', '0.0.3' ]
+425 verbose addNamed [ '0.0.3', '0.0.3' ]
+426 silly lockFile 4085d016-osenv-0-0-3 osenv@0.0.3
+427 verbose lock osenv@0.0.3 /root/.npm/4085d016-osenv-0-0-3.lock
+428 verbose cache add [ 'ini@~1.1.0', null ]
+429 verbose cache add name=undefined spec="ini@~1.1.0" args=["ini@~1.1.0",null]
+430 verbose parsed url { protocol: null,
+430 verbose parsed url   slashes: null,
+430 verbose parsed url   auth: null,
+430 verbose parsed url   host: null,
+430 verbose parsed url   port: null,
+430 verbose parsed url   hostname: null,
+430 verbose parsed url   hash: null,
+430 verbose parsed url   search: null,
+430 verbose parsed url   query: null,
+430 verbose parsed url   pathname: 'ini@~1.1.0',
+430 verbose parsed url   path: 'ini@~1.1.0',
+430 verbose parsed url   href: 'ini@~1.1.0' }
+431 verbose cache add name="ini" spec="~1.1.0" args=["ini","~1.1.0"]
+432 verbose parsed url { protocol: null,
+432 verbose parsed url   slashes: null,
+432 verbose parsed url   auth: null,
+432 verbose parsed url   host: null,
+432 verbose parsed url   port: null,
+432 verbose parsed url   hostname: null,
+432 verbose parsed url   hash: null,
+432 verbose parsed url   search: null,
+432 verbose parsed url   query: null,
+432 verbose parsed url   pathname: '~1.1.0',
+432 verbose parsed url   path: '~1.1.0',
+432 verbose parsed url   href: '~1.1.0' }
+433 verbose addNamed [ 'ini', '~1.1.0' ]
+434 verbose addNamed [ null, '>=1.1.0-0 <1.2.0-0' ]
+435 silly lockFile d6a0c59d-ini-1-1-0 ini@~1.1.0
+436 verbose lock ini@~1.1.0 /root/.npm/d6a0c59d-ini-1-1-0.lock
+437 verbose cache add [ 'nopt@2', null ]
+438 verbose cache add name=undefined spec="nopt@2" args=["nopt@2",null]
+439 verbose parsed url { protocol: null,
+439 verbose parsed url   slashes: null,
+439 verbose parsed url   auth: null,
+439 verbose parsed url   host: null,
+439 verbose parsed url   port: null,
+439 verbose parsed url   hostname: null,
+439 verbose parsed url   hash: null,
+439 verbose parsed url   search: null,
+439 verbose parsed url   query: null,
+439 verbose parsed url   pathname: 'nopt@2',
+439 verbose parsed url   path: 'nopt@2',
+439 verbose parsed url   href: 'nopt@2' }
+440 verbose cache add name="nopt" spec="2" args=["nopt","2"]
+441 verbose parsed url { protocol: null,
+441 verbose parsed url   slashes: null,
+441 verbose parsed url   auth: null,
+441 verbose parsed url   host: null,
+441 verbose parsed url   port: null,
+441 verbose parsed url   hostname: null,
+441 verbose parsed url   hash: null,
+441 verbose parsed url   search: null,
+441 verbose parsed url   query: null,
+441 verbose parsed url   pathname: '2',
+441 verbose parsed url   path: '2',
+441 verbose parsed url   href: '2' }
+442 verbose addNamed [ 'nopt', '2' ]
+443 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+444 silly lockFile 64594a3f-nopt-2 nopt@2
+445 verbose lock nopt@2 /root/.npm/64594a3f-nopt-2.lock
+446 silly addNameRange { name: 'once', range: '>=1.1.1-0 <1.2.0-0', hasData: false }
+447 verbose cache add [ 'config-chain@~1.1.1', null ]
+448 verbose cache add name=undefined spec="config-chain@~1.1.1" args=["config-chain@~1.1.1",null]
+449 verbose parsed url { protocol: null,
+449 verbose parsed url   slashes: null,
+449 verbose parsed url   auth: null,
+449 verbose parsed url   host: null,
+449 verbose parsed url   port: null,
+449 verbose parsed url   hostname: null,
+449 verbose parsed url   hash: null,
+449 verbose parsed url   search: null,
+449 verbose parsed url   query: null,
+449 verbose parsed url   pathname: 'config-chain@~1.1.1',
+449 verbose parsed url   path: 'config-chain@~1.1.1',
+449 verbose parsed url   href: 'config-chain@~1.1.1' }
+450 verbose cache add name="config-chain" spec="~1.1.1" args=["config-chain","~1.1.1"]
+451 verbose parsed url { protocol: null,
+451 verbose parsed url   slashes: null,
+451 verbose parsed url   auth: null,
+451 verbose parsed url   host: null,
+451 verbose parsed url   port: null,
+451 verbose parsed url   hostname: null,
+451 verbose parsed url   hash: null,
+451 verbose parsed url   search: null,
+451 verbose parsed url   query: null,
+451 verbose parsed url   pathname: '~1.1.1',
+451 verbose parsed url   path: '~1.1.1',
+451 verbose parsed url   href: '~1.1.1' }
+452 verbose addNamed [ 'config-chain', '~1.1.1' ]
+453 verbose addNamed [ null, '>=1.1.1-0 <1.2.0-0' ]
+454 silly lockFile b9689009-config-chain-1-1-1 config-chain@~1.1.1
+455 verbose lock config-chain@~1.1.1 /root/.npm/b9689009-config-chain-1-1-1.lock
+456 verbose cache add [ 'inherits@~1.0.0', null ]
+457 verbose cache add name=undefined spec="inherits@~1.0.0" args=["inherits@~1.0.0",null]
+458 verbose parsed url { protocol: null,
+458 verbose parsed url   slashes: null,
+458 verbose parsed url   auth: null,
+458 verbose parsed url   host: null,
+458 verbose parsed url   port: null,
+458 verbose parsed url   hostname: null,
+458 verbose parsed url   hash: null,
+458 verbose parsed url   search: null,
+458 verbose parsed url   query: null,
+458 verbose parsed url   pathname: 'inherits@~1.0.0',
+458 verbose parsed url   path: 'inherits@~1.0.0',
+458 verbose parsed url   href: 'inherits@~1.0.0' }
+459 verbose cache add name="inherits" spec="~1.0.0" args=["inherits","~1.0.0"]
+460 verbose parsed url { protocol: null,
+460 verbose parsed url   slashes: null,
+460 verbose parsed url   auth: null,
+460 verbose parsed url   host: null,
+460 verbose parsed url   port: null,
+460 verbose parsed url   hostname: null,
+460 verbose parsed url   hash: null,
+460 verbose parsed url   search: null,
+460 verbose parsed url   query: null,
+460 verbose parsed url   pathname: '~1.0.0',
+460 verbose parsed url   path: '~1.0.0',
+460 verbose parsed url   href: '~1.0.0' }
+461 verbose addNamed [ 'inherits', '~1.0.0' ]
+462 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+463 silly lockFile 9a68ae75-inherits-1-0-0 inherits@~1.0.0
+464 verbose lock inherits@~1.0.0 /root/.npm/9a68ae75-inherits-1-0-0.lock
+465 info install ncp@0.4.2
+466 verbose linkBins kew@0.1.7
+467 verbose linkMans kew@0.1.7
+468 verbose rebuildBundles kew@0.1.7
+469 silly addNameRange { name: 'semver', range: '>=1.1.0-0 <1.2.0-0', hasData: false }
+470 silly addNameRange { name: 'ini', range: '>=1.1.0-0 <1.2.0-0', hasData: false }
+471 silly addNameRange { name: 'nopt', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+472 info install kew@0.1.7
+473 silly addNameRange { name: 'config-chain',
+473 silly addNameRange   range: '>=1.1.1-0 <1.2.0-0',
+473 silly addNameRange   hasData: false }
+474 silly addNameRange { name: 'inherits', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+475 info postinstall ncp@0.4.2
+476 info postinstall kew@0.1.7
+477 verbose url raw once
+478 verbose url resolving [ 'https://registry.npmjs.org/', './once' ]
+479 verbose url resolved https://registry.npmjs.org/once
+480 info trying registry request attempt 1 at 11:54:08
+481 verbose etag "A6PZCXHNYMPJE6TXP54IHF8Q9"
+482 http GET https://registry.npmjs.org/once
+483 verbose url raw semver
+484 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+485 verbose url resolved https://registry.npmjs.org/semver
+486 info trying registry request attempt 1 at 11:54:08
+487 verbose etag "ESCTGS95DTGQH17SNMYJ3AAWW"
+488 http GET https://registry.npmjs.org/semver
+489 verbose url raw osenv/0.0.3
+490 verbose url resolving [ 'https://registry.npmjs.org/', './osenv/0.0.3' ]
+491 verbose url resolved https://registry.npmjs.org/osenv/0.0.3
+492 info trying registry request attempt 1 at 11:54:08
+493 verbose etag "988AFYLFBQBVSXZR0VKXG5JLY"
+494 http GET https://registry.npmjs.org/osenv/0.0.3
+495 verbose url raw ini
+496 verbose url resolving [ 'https://registry.npmjs.org/', './ini' ]
+497 verbose url resolved https://registry.npmjs.org/ini
+498 info trying registry request attempt 1 at 11:54:08
+499 verbose etag "EYZBBQXOVH0B3AHO8CTCKP7LU"
+500 http GET https://registry.npmjs.org/ini
+501 verbose url raw nopt
+502 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+503 verbose url resolved https://registry.npmjs.org/nopt
+504 info trying registry request attempt 1 at 11:54:08
+505 verbose etag "BP28HFNHLIWHELLFJ2AYRRKY5"
+506 http GET https://registry.npmjs.org/nopt
+507 verbose url raw config-chain
+508 verbose url resolving [ 'https://registry.npmjs.org/', './config-chain' ]
+509 verbose url resolved https://registry.npmjs.org/config-chain
+510 info trying registry request attempt 1 at 11:54:08
+511 verbose etag "7FFK6OPNG5JF61CT7VH07PG51"
+512 http GET https://registry.npmjs.org/config-chain
+513 verbose url raw inherits
+514 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+515 verbose url resolved https://registry.npmjs.org/inherits
+516 info trying registry request attempt 1 at 11:54:08
+517 verbose etag "75IFE02B6138KP4TCCLJ4ABFU"
+518 http GET https://registry.npmjs.org/inherits
+519 silly lockFile bbfd3898-es-phantomjs-node-modules-mkdirp tar:///usr/lib/node_modules/phantomjs/node_modules/mkdirp
+520 silly lockFile bbfd3898-es-phantomjs-node-modules-mkdirp tar:///usr/lib/node_modules/phantomjs/node_modules/mkdirp
+521 silly lockFile 2b3d2d2d-oot-npm-mkdirp-0-3-5-package-tgz tar:///root/.npm/mkdirp/0.3.5/package.tgz
+522 silly lockFile 2b3d2d2d-oot-npm-mkdirp-0-3-5-package-tgz tar:///root/.npm/mkdirp/0.3.5/package.tgz
+523 info preinstall mkdirp@0.3.5
+524 verbose readDependencies using package.json deps
+525 verbose readDependencies using package.json deps
+526 silly resolved []
+527 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/mkdirp
+528 info build /usr/lib/node_modules/phantomjs/node_modules/mkdirp
+529 verbose linkStuff [ true,
+529 verbose linkStuff   '/usr/lib/node_modules',
+529 verbose linkStuff   false,
+529 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules' ]
+530 info linkStuff mkdirp@0.3.5
+531 verbose linkBins mkdirp@0.3.5
+532 verbose linkMans mkdirp@0.3.5
+533 verbose rebuildBundles mkdirp@0.3.5
+534 info install mkdirp@0.3.5
+535 info postinstall mkdirp@0.3.5
+536 silly lockFile 5c270e98-s-phantomjs-node-modules-adm-zip tar:///usr/lib/node_modules/phantomjs/node_modules/adm-zip
+537 silly lockFile 5c270e98-s-phantomjs-node-modules-adm-zip tar:///usr/lib/node_modules/phantomjs/node_modules/adm-zip
+538 silly lockFile 6364bd12-ot-npm-adm-zip-0-2-1-package-tgz tar:///root/.npm/adm-zip/0.2.1/package.tgz
+539 silly lockFile 6364bd12-ot-npm-adm-zip-0-2-1-package-tgz tar:///root/.npm/adm-zip/0.2.1/package.tgz
+540 info preinstall adm-zip@0.2.1
+541 verbose readDependencies using package.json deps
+542 verbose readDependencies using package.json deps
+543 silly resolved []
+544 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/adm-zip
+545 info build /usr/lib/node_modules/phantomjs/node_modules/adm-zip
+546 verbose linkStuff [ true,
+546 verbose linkStuff   '/usr/lib/node_modules',
+546 verbose linkStuff   false,
+546 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules' ]
+547 info linkStuff adm-zip@0.2.1
+548 verbose linkBins adm-zip@0.2.1
+549 verbose linkMans adm-zip@0.2.1
+550 verbose rebuildBundles adm-zip@0.2.1
+551 info install adm-zip@0.2.1
+552 info postinstall adm-zip@0.2.1
+553 http 304 https://registry.npmjs.org/graceful-fs
+554 silly registry.get cb [ 304,
+554 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+554 silly registry.get     etag: '"8LXHQOPONJROBW3CL63VPENA7"',
+554 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+554 silly registry.get     'content-length': '0' } ]
+555 verbose etag graceful-fs from cache
+556 silly addNameRange number 2 { name: 'graceful-fs',
+556 silly addNameRange   range: '>=1.1.0-0 <1.2.0-0',
+556 silly addNameRange   hasData: true }
+557 silly addNameRange versions [ 'graceful-fs',
+557 silly addNameRange   [ '1.0.0',
+557 silly addNameRange     '1.0.1',
+557 silly addNameRange     '1.0.2',
+557 silly addNameRange     '1.1.0',
+557 silly addNameRange     '1.1.1',
+557 silly addNameRange     '1.1.2',
+557 silly addNameRange     '1.1.3',
+557 silly addNameRange     '1.1.4',
+557 silly addNameRange     '1.1.5',
+557 silly addNameRange     '1.1.6',
+557 silly addNameRange     '1.1.7',
+557 silly addNameRange     '1.1.8',
+557 silly addNameRange     '1.1.9',
+557 silly addNameRange     '1.1.10',
+557 silly addNameRange     '1.1.11',
+557 silly addNameRange     '1.1.12',
+557 silly addNameRange     '1.1.13',
+557 silly addNameRange     '1.1.14',
+557 silly addNameRange     '1.2.0',
+557 silly addNameRange     '1.2.1',
+557 silly addNameRange     '1.2.2',
+557 silly addNameRange     '1.2.3',
+557 silly addNameRange     '2.0.0' ] ]
+558 verbose addNamed [ 'graceful-fs', '1.1.14' ]
+559 verbose addNamed [ '1.1.14', '1.1.14' ]
+560 silly lockFile 2cf96e8d-graceful-fs-1-1-14 graceful-fs@1.1.14
+561 verbose lock graceful-fs@1.1.14 /root/.npm/2cf96e8d-graceful-fs-1-1-14.lock
+562 silly lockFile 2cf96e8d-graceful-fs-1-1-14 graceful-fs@1.1.14
+563 silly lockFile 2cf96e8d-graceful-fs-1-1-14 graceful-fs@1.1.14
+564 silly lockFile 0502dd56-graceful-fs-1-1 graceful-fs@~1.1
+565 silly lockFile 0502dd56-graceful-fs-1-1 graceful-fs@~1.1
+566 silly resolved [ { author:
+566 silly resolved      { name: 'Isaac Z. Schlueter',
+566 silly resolved        email: 'i@izs.me',
+566 silly resolved        url: 'http://blog.izs.me' },
+566 silly resolved     name: 'graceful-fs',
+566 silly resolved     description: 'fs monkey-patching to avoid EMFILE and other problems',
+566 silly resolved     version: '1.1.14',
+566 silly resolved     repository:
+566 silly resolved      { type: 'git',
+566 silly resolved        url: 'git://github.com/isaacs/node-graceful-fs.git' },
+566 silly resolved     main: 'graceful-fs.js',
+566 silly resolved     engines: { node: '>=0.4.0' },
+566 silly resolved     directories: { test: 'test' },
+566 silly resolved     scripts: { test: 'tap test/*.js' },
+566 silly resolved     keywords: [ 'fs', 'EMFILE', 'error', 'handling', 'monkeypatch' ],
+566 silly resolved     license: 'BSD',
+566 silly resolved     readme: 'Just like node\'s `fs` module, but it does an incremental back-off when\nEMFILE is encountered.\n\nUseful in asynchronous situations where one needs to try to open lots\nand lots of files.\n',
+566 silly resolved     readmeFilename: 'README.md',
+566 silly resolved     bugs: { url: 'https://github.com/isaacs/node-graceful-fs/issues' },
+566 silly resolved     _id: 'graceful-fs@1.1.14',
+566 silly resolved     _from: 'graceful-fs@~1.1' } ]
+567 info install graceful-fs@1.1.14 into /usr/lib/node_modules/phantomjs/node_modules/rimraf
+568 info installOne graceful-fs@1.1.14
+569 info /usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs unbuild
+570 verbose tar unpack /root/.npm/graceful-fs/1.1.14/package.tgz
+571 silly lockFile a9101755--rimraf-node-modules-graceful-fs tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs
+572 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs /root/.npm/a9101755--rimraf-node-modules-graceful-fs.lock
+573 silly lockFile e56a375d-m-graceful-fs-1-1-14-package-tgz tar:///root/.npm/graceful-fs/1.1.14/package.tgz
+574 verbose lock tar:///root/.npm/graceful-fs/1.1.14/package.tgz /root/.npm/e56a375d-m-graceful-fs-1-1-14-package-tgz.lock
+575 silly gunzTarPerm modes [ '755', '644' ]
+576 silly gunzTarPerm extractEntry package.json
+577 silly gunzTarPerm extractEntry .npmignore
+578 silly gunzTarPerm extractEntry README.md
+579 silly gunzTarPerm extractEntry LICENSE
+580 silly gunzTarPerm extractEntry graceful-fs.js
+581 silly gunzTarPerm extractEntry test/open.js
+582 http 304 https://registry.npmjs.org/nopt
+583 silly registry.get cb [ 304,
+583 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+583 silly registry.get     etag: '"BP28HFNHLIWHELLFJ2AYRRKY5"',
+583 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+583 silly registry.get     'content-length': '0' } ]
+584 verbose etag nopt from cache
+585 silly addNameRange number 2 { name: 'nopt', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+586 silly addNameRange versions [ 'nopt',
+586 silly addNameRange   [ '1.0.0',
+586 silly addNameRange     '1.0.1',
+586 silly addNameRange     '1.0.2',
+586 silly addNameRange     '1.0.3',
+586 silly addNameRange     '1.0.4',
+586 silly addNameRange     '1.0.5',
+586 silly addNameRange     '1.0.6',
+586 silly addNameRange     '1.0.7',
+586 silly addNameRange     '1.0.8',
+586 silly addNameRange     '1.0.9',
+586 silly addNameRange     '1.0.10',
+586 silly addNameRange     '2.0.0',
+586 silly addNameRange     '2.1.0',
+586 silly addNameRange     '2.1.1',
+586 silly addNameRange     '2.1.2' ] ]
+587 verbose addNamed [ 'nopt', '2.1.2' ]
+588 verbose addNamed [ '2.1.2', '2.1.2' ]
+589 silly lockFile 7d0298b9-nopt-2-1-2 nopt@2.1.2
+590 verbose lock nopt@2.1.2 /root/.npm/7d0298b9-nopt-2-1-2.lock
+591 silly lockFile a9101755--rimraf-node-modules-graceful-fs tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs
+592 silly lockFile a9101755--rimraf-node-modules-graceful-fs tar:///usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs
+593 silly lockFile e56a375d-m-graceful-fs-1-1-14-package-tgz tar:///root/.npm/graceful-fs/1.1.14/package.tgz
+594 silly lockFile e56a375d-m-graceful-fs-1-1-14-package-tgz tar:///root/.npm/graceful-fs/1.1.14/package.tgz
+595 info preinstall graceful-fs@1.1.14
+596 verbose readDependencies using package.json deps
+597 silly lockFile 7d0298b9-nopt-2-1-2 nopt@2.1.2
+598 silly lockFile 7d0298b9-nopt-2-1-2 nopt@2.1.2
+599 verbose readDependencies using package.json deps
+600 silly resolved []
+601 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs
+602 info build /usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules/graceful-fs
+603 verbose linkStuff [ true,
+603 verbose linkStuff   '/usr/lib/node_modules',
+603 verbose linkStuff   false,
+603 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/rimraf/node_modules' ]
+604 info linkStuff graceful-fs@1.1.14
+605 verbose linkBins graceful-fs@1.1.14
+606 verbose linkMans graceful-fs@1.1.14
+607 verbose rebuildBundles graceful-fs@1.1.14
+608 silly lockFile 64594a3f-nopt-2 nopt@2
+609 silly lockFile 64594a3f-nopt-2 nopt@2
+610 info install graceful-fs@1.1.14
+611 info postinstall graceful-fs@1.1.14
+612 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/rimraf
+613 info build /usr/lib/node_modules/phantomjs/node_modules/rimraf
+614 verbose linkStuff [ true,
+614 verbose linkStuff   '/usr/lib/node_modules',
+614 verbose linkStuff   false,
+614 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules' ]
+615 info linkStuff rimraf@2.0.3
+616 verbose linkBins rimraf@2.0.3
+617 verbose linkMans rimraf@2.0.3
+618 verbose rebuildBundles rimraf@2.0.3
+619 verbose rebuildBundles [ 'graceful-fs' ]
+620 info install rimraf@2.0.3
+621 info postinstall rimraf@2.0.3
+622 http 304 https://registry.npmjs.org/config-chain
+623 silly registry.get cb [ 304,
+623 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+623 silly registry.get     etag: '"7FFK6OPNG5JF61CT7VH07PG51"',
+623 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+623 silly registry.get     'content-length': '0' } ]
+624 verbose etag config-chain from cache
+625 http 304 https://registry.npmjs.org/once
+626 silly registry.get cb [ 304,
+626 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+626 silly registry.get     etag: '"A6PZCXHNYMPJE6TXP54IHF8Q9"',
+626 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+626 silly registry.get     'content-length': '0' } ]
+627 verbose etag once from cache
+628 http 304 https://registry.npmjs.org/semver
+629 silly registry.get cb [ 304,
+629 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+629 silly registry.get     etag: '"ESCTGS95DTGQH17SNMYJ3AAWW"',
+629 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+629 silly registry.get     'content-length': '0' } ]
+630 verbose etag semver from cache
+631 silly addNameRange number 2 { name: 'config-chain',
+631 silly addNameRange   range: '>=1.1.1-0 <1.2.0-0',
+631 silly addNameRange   hasData: true }
+632 silly addNameRange versions [ 'config-chain',
+632 silly addNameRange   [ '0.1.0',
+632 silly addNameRange     '0.1.1',
+632 silly addNameRange     '0.2.0',
+632 silly addNameRange     '0.3.0',
+632 silly addNameRange     '0.3.1',
+632 silly addNameRange     '0.3.2',
+632 silly addNameRange     '0.3.3',
+632 silly addNameRange     '1.0.0',
+632 silly addNameRange     '1.0.1',
+632 silly addNameRange     '1.1.0',
+632 silly addNameRange     '1.1.1',
+632 silly addNameRange     '1.1.2',
+632 silly addNameRange     '1.1.3',
+632 silly addNameRange     '1.1.4',
+632 silly addNameRange     '1.1.5',
+632 silly addNameRange     '1.1.6',
+632 silly addNameRange     '0.3.4',
+632 silly addNameRange     '1.1.7' ] ]
+633 verbose addNamed [ 'config-chain', '1.1.7' ]
+634 verbose addNamed [ '1.1.7', '1.1.7' ]
+635 silly lockFile 11d7e7ad-config-chain-1-1-7 config-chain@1.1.7
+636 verbose lock config-chain@1.1.7 /root/.npm/11d7e7ad-config-chain-1-1-7.lock
+637 silly addNameRange number 2 { name: 'once', range: '>=1.1.1-0 <1.2.0-0', hasData: true }
+638 silly addNameRange versions [ 'once', [ '1.1.1' ] ]
+639 verbose addNamed [ 'once', '1.1.1' ]
+640 verbose addNamed [ '1.1.1', '1.1.1' ]
+641 silly lockFile 6beab3c4-once-1-1-1 once@1.1.1
+642 verbose lock once@1.1.1 /root/.npm/6beab3c4-once-1-1-1.lock
+643 http 304 https://registry.npmjs.org/osenv/0.0.3
+644 silly registry.get cb [ 304,
+644 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+644 silly registry.get     etag: '"988AFYLFBQBVSXZR0VKXG5JLY"',
+644 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+644 silly registry.get     'content-length': '0' } ]
+645 verbose etag osenv/0.0.3 from cache
+646 http 304 https://registry.npmjs.org/ini
+647 silly registry.get cb [ 304,
+647 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+647 silly registry.get     etag: '"EYZBBQXOVH0B3AHO8CTCKP7LU"',
+647 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:52 GMT',
+647 silly registry.get     'content-length': '0' } ]
+648 verbose etag ini from cache
+649 silly addNameRange number 2 { name: 'semver', range: '>=1.1.0-0 <1.2.0-0', hasData: true }
+650 silly addNameRange versions [ 'semver',
+650 silly addNameRange   [ '1.0.0',
+650 silly addNameRange     '1.0.1',
+650 silly addNameRange     '1.0.2',
+650 silly addNameRange     '1.0.3',
+650 silly addNameRange     '1.0.4',
+650 silly addNameRange     '1.0.5',
+650 silly addNameRange     '1.0.6',
+650 silly addNameRange     '1.0.7',
+650 silly addNameRange     '1.0.8',
+650 silly addNameRange     '1.0.9',
+650 silly addNameRange     '1.0.10',
+650 silly addNameRange     '1.0.11',
+650 silly addNameRange     '1.0.12',
+650 silly addNameRange     '1.0.13',
+650 silly addNameRange     '1.0.14',
+650 silly addNameRange     '1.1.0',
+650 silly addNameRange     '1.1.1',
+650 silly addNameRange     '1.1.2',
+650 silly addNameRange     '1.1.3',
+650 silly addNameRange     '1.1.4',
+650 silly addNameRange     '2.0.0-alpha',
+650 silly addNameRange     '2.0.0-beta',
+650 silly addNameRange     '2.0.1',
+650 silly addNameRange     '2.0.2',
+650 silly addNameRange     '2.0.3',
+650 silly addNameRange     '2.0.4',
+650 silly addNameRange     '2.0.5',
+650 silly addNameRange     '2.0.6',
+650 silly addNameRange     '2.0.7',
+650 silly addNameRange     '2.0.8',
+650 silly addNameRange     '2.0.9',
+650 silly addNameRange     '2.0.10',
+650 silly addNameRange     '2.0.11',
+650 silly addNameRange     '2.1.0' ] ]
+651 verbose addNamed [ 'semver', '1.1.4' ]
+652 verbose addNamed [ '1.1.4', '1.1.4' ]
+653 silly lockFile da52979e-semver-1-1-4 semver@1.1.4
+654 verbose lock semver@1.1.4 /root/.npm/da52979e-semver-1-1-4.lock
+655 http 304 https://registry.npmjs.org/inherits
+656 silly registry.get cb [ 304,
+656 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+656 silly registry.get     etag: '"75IFE02B6138KP4TCCLJ4ABFU"',
+656 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:53 GMT',
+656 silly registry.get     'content-length': '0' } ]
+657 verbose etag inherits from cache
+658 silly addNameRange number 2 { name: 'ini', range: '>=1.1.0-0 <1.2.0-0', hasData: true }
+659 silly addNameRange versions [ 'ini',
+659 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.1.0' ] ]
+660 verbose addNamed [ 'ini', '1.1.0' ]
+661 verbose addNamed [ '1.1.0', '1.1.0' ]
+662 silly lockFile f80c58e4-ini-1-1-0 ini@1.1.0
+663 verbose lock ini@1.1.0 /root/.npm/f80c58e4-ini-1-1-0.lock
+664 silly lockFile 11d7e7ad-config-chain-1-1-7 config-chain@1.1.7
+665 silly lockFile 11d7e7ad-config-chain-1-1-7 config-chain@1.1.7
+666 silly lockFile 6beab3c4-once-1-1-1 once@1.1.1
+667 silly lockFile 6beab3c4-once-1-1-1 once@1.1.1
+668 silly lockFile b9689009-config-chain-1-1-1 config-chain@~1.1.1
+669 silly lockFile b9689009-config-chain-1-1-1 config-chain@~1.1.1
+670 silly lockFile 062b4488-once-1-1-1 once@~1.1.1
+671 silly lockFile 062b4488-once-1-1-1 once@~1.1.1
+672 silly addNameRange number 2 { name: 'inherits', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+673 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0' ] ]
+674 verbose addNamed [ 'inherits', '1.0.0' ]
+675 verbose addNamed [ '1.0.0', '1.0.0' ]
+676 silly lockFile 776fbe77-inherits-1-0-0 inherits@1.0.0
+677 verbose lock inherits@1.0.0 /root/.npm/776fbe77-inherits-1-0-0.lock
+678 silly lockFile 4085d016-osenv-0-0-3 osenv@0.0.3
+679 silly lockFile 4085d016-osenv-0-0-3 osenv@0.0.3
+680 silly lockFile da52979e-semver-1-1-4 semver@1.1.4
+681 silly lockFile da52979e-semver-1-1-4 semver@1.1.4
+682 silly lockFile 384d7ac7-semver-1-1-0 semver@~1.1.0
+683 silly lockFile 384d7ac7-semver-1-1-0 semver@~1.1.0
+684 silly lockFile f80c58e4-ini-1-1-0 ini@1.1.0
+685 silly lockFile f80c58e4-ini-1-1-0 ini@1.1.0
+686 silly lockFile d6a0c59d-ini-1-1-0 ini@~1.1.0
+687 silly lockFile d6a0c59d-ini-1-1-0 ini@~1.1.0
+688 silly lockFile 776fbe77-inherits-1-0-0 inherits@1.0.0
+689 silly lockFile 776fbe77-inherits-1-0-0 inherits@1.0.0
+690 silly lockFile 9a68ae75-inherits-1-0-0 inherits@~1.0.0
+691 silly lockFile 9a68ae75-inherits-1-0-0 inherits@~1.0.0
+692 silly resolved [ { name: 'nopt',
+692 silly resolved     version: '2.1.2',
+692 silly resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+692 silly resolved     author:
+692 silly resolved      { name: 'Isaac Z. Schlueter',
+692 silly resolved        email: 'i@izs.me',
+692 silly resolved        url: 'http://blog.izs.me/' },
+692 silly resolved     main: 'lib/nopt.js',
+692 silly resolved     scripts: { test: 'node lib/nopt.js' },
+692 silly resolved     repository: { type: 'git', url: 'http://github.com/isaacs/nopt' },
+692 silly resolved     bin: { nopt: './bin/nopt.js' },
+692 silly resolved     license:
+692 silly resolved      { type: 'MIT',
+692 silly resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+692 silly resolved     dependencies: { abbrev: '1' },
+692 silly resolved     readme: 'If you want to write an option parser, and have it be good, there are\ntwo ways to do it.  The Right Way, and the Wrong Way.\n\nThe Wrong Way is to sit down and write an option parser.  We\'ve all done\nthat.\n\nThe Right Way is to write some complex configurable program with so many\noptions that you go half-insane just trying to manage them all, and put\nit off with duct-tape solutions until you see exactly to the core of the\nproblem, and finally snap and write an awesome option parser.\n\nIf you want to write an option parser, don\'t write an option parser.\nWrite a package manager, or a source control system, or a service\nrestarter, or an operating system.  You probably won\'t end up with a\ngood one of those, but if you don\'t give up, and you are relentless and\ndiligent enough in your procrastination, you may just end up with a very\nnice option parser.\n\n## USAGE\n\n    // my-program.js\n    var nopt = require("nopt")\n      , Stream = require("stream").Stream\n      , path = require("path")\n      , knownOpts = { "foo" : [String, null]\n                    , "bar" : [Stream, Number]\n                    , "baz" : path\n                    , "bloo" : [ "big", "medium", "small" ]\n                    , "flag" : Boolean\n                    , "pick" : Boolean\n                    , "many" : [String, Array]\n                    }\n      , shortHands = { "foofoo" : ["--foo", "Mr. Foo"]\n                     , "b7" : ["--bar", "7"]\n                     , "m" : ["--bloo", "medium"]\n                     , "p" : ["--pick"]\n                     , "f" : ["--flag"]\n                     }\n                 // everything is optional.\n                 // knownOpts and shorthands default to {}\n                 // arg list defaults to process.argv\n                 // slice defaults to 2\n      , parsed = nopt(knownOpts, shortHands, process.argv, 2)\n    console.log(parsed)\n\nThis would give you support for any of the following:\n\n```bash\n$ node my-program.js --foo "blerp" --no-flag\n{ "foo" : "blerp", "flag" : false }\n\n$ node my-program.js ---bar 7 --foo "Mr. Hand" --flag\n{ bar: 7, foo: "Mr. Hand", flag: true }\n\n$ node my-program.js --foo "blerp" -f -----p\n{ foo: "blerp", flag: true, pick: true }\n\n$ node my-program.js -fp --foofoo\n{ foo: "Mr. Foo", flag: true, pick: true }\n\n$ node my-program.js --foofoo -- -fp  # -- stops the flag parsing.\n{ foo: "Mr. Foo", argv: { remain: ["-fp"] } }\n\n$ node my-program.js --blatzk 1000 -fp # unknown opts are ok.\n{ blatzk: 1000, flag: true, pick: true }\n\n$ node my-program.js --blatzk true -fp # but they need a value\n{ blatzk: true, flag: true, pick: true }\n\n$ node my-program.js --no-blatzk -fp # unless they start with "no-"\n{ blatzk: false, flag: true, pick: true }\n\n$ node my-program.js --baz b/a/z # known paths are resolved.\n{ baz: "/Users/isaacs/b/a/z" }\n\n# if Array is one of the types, then it can take many\n# values, and will always be an array.  The other types provided\n# specify what types are allowed in the list.\n\n$ node my-program.js --many 1 --many null --many foo\n{ many: ["1", "null", "foo"] }\n\n$ node my-program.js --many foo\n{ many: ["foo"] }\n```\n\nRead the tests at the bottom of `lib/nopt.js` for more examples of\nwhat this puppy can do.\n\n## Types\n\nThe following types are supported, and defined on `nopt.typeDefs`\n\n* String: A normal string.  No parsing is done.\n* path: A file system path.  Gets resolved against cwd if not absolute.\n* url: A url.  If it doesn\'t parse, it isn\'t accepted.\n* Number: Must be numeric.\n* Date: Must parse as a date. If it does, and `Date` is one of the options,\n  then it will return a Date object, not a string.\n* Boolean: Must be either `true` or `false`.  If an option is a boolean,\n  then it does not need a value, and its presence will imply `true` as\n  the value.  To negate boolean flags, do `--no-whatever` or `--whatever\n  false`\n* NaN: Means that the option is strictly not allowed.  Any value will\n  fail.\n* Stream: An object matching the "Stream" class in node.  Valuable\n  for use when validating programmatically.  (npm uses this to let you\n  supply any WriteStream on the `outfd` and `logfd` config options.)\n* Array: If `Array` is specified as one of the types, then the value\n  will be parsed as a list of options.  This means that multiple values\n  can be specified, and that the value will always be an array.\n\nIf a type is an array of values not on this list, then those are\nconsidered valid values.  For instance, in the example above, the\n`--bloo` option can only be one of `"big"`, `"medium"`, or `"small"`,\nand any other value will be rejected.\n\nWhen parsing unknown fields, `"true"`, `"false"`, and `"null"` will be\ninterpreted as their JavaScript equivalents, and numeric values will be\ninterpreted as a number.\n\nYou can also mix types and values, or multiple types, in a list.  For\ninstance `{ blah: [Number, null] }` would allow a value to be set to\neither a Number or null.  When types are ordered, this implies a\npreference, and the first type that can be used to properly interpret\nthe value will be used.\n\nTo define a new type, add it to `nopt.typeDefs`.  Each item in that\nhash is an object with a `type` member and a `validate` method.  The\n`type` member is an object that matches what goes in the type list.  The\n`validate` method is a function that gets called with `validate(data,\nkey, val)`.  Validate methods should assign `data[key]` to the valid\nvalue of `val` if it can be handled properly, or return boolean\n`false` if it cannot.\n\nYou can also call `nopt.clean(data, types, typeDefs)` to clean up a\nconfig object and remove its invalid properties.\n\n## Error Handling\n\nBy default, nopt outputs a warning to standard error when invalid\noptions are found.  You can change this behavior by assigning a method\nto `nopt.invalidHandler`.  This method will be called with\nthe offending `nopt.invalidHandler(key, val, types)`.\n\nIf no `nopt.invalidHandler` is assigned, then it will console.error\nits whining.  If it is assigned to boolean `false` then the warning is\nsuppressed.\n\n## Abbreviations\n\nYes, they are supported.  If you define options like this:\n\n```javascript\n{ "foolhardyelephants" : Boolean\n, "pileofmonkeys" : Boolean }\n```\n\nThen this will work:\n\n```bash\nnode program.js --foolhar --pil\nnode program.js --no-f --pileofmon\n# etc.\n```\n\n## Shorthands\n\nShorthands are a hash of shorter option names to a snippet of args that\nthey expand to.\n\nIf multiple one-character shorthands are all combined, and the\ncombination does not unambiguously match any other option or shorthand,\nthen they will be broken up into their constituent parts.  For example:\n\n```json\n{ "s" : ["--loglevel", "silent"]\n, "g" : "--global"\n, "f" : "--force"\n, "p" : "--parseable"\n, "l" : "--long"\n}\n```\n\n```bash\nnpm ls -sgflp\n# just like doing this:\nnpm ls --loglevel silent --global --force --long --parseable\n```\n\n## The Rest of the args\n\nThe config object returned by nopt is given a special member called\n`argv`, which is an object with the following fields:\n\n* `remain`: The remaining args after all the parsing has occurred.\n* `original`: The args as they originally appeared.\n* `cooked`: The args after flags and shorthands are expanded.\n\n## Slicing\n\nNode programs are called with more or less the exact argv as it appears\nin C land, after the v8 and node-specific options have been plucked off.\nAs such, `argv[0]` is always `node` and `argv[1]` is always the\nJavaScript program being run.\n\nThat\'s usually not very useful to you.  So they\'re sliced off by\ndefault.  If you want them, then you can pass in `0` as the last\nargument, or any other number that you\'d like to slice off the start of\nthe list.\n',
+692 silly resolved     readmeFilename: 'README.md',
+692 silly resolved     bugs: { url: 'https://github.com/isaacs/nopt/issues' },
+692 silly resolved     _id: 'nopt@2.1.2',
+692 silly resolved     _from: 'nopt@2' },
+692 silly resolved   { name: 'config-chain',
+692 silly resolved     version: '1.1.7',
+692 silly resolved     description: 'HANDLE CONFIGURATION ONCE AND FOR ALL',
+692 silly resolved     homepage: 'http://github.com/dominictarr/config-chain',
+692 silly resolved     repository:
+692 silly resolved      { type: 'git',
+692 silly resolved        url: 'https://github.com/dominictarr/config-chain.git' },
+692 silly resolved     dependencies: { 'proto-list': '~1.2.1', ini: '1' },
+692 silly resolved     devDependencies: { tap: '0.3.0' },
+692 silly resolved     author:
+692 silly resolved      { name: 'Dominic Tarr',
+692 silly resolved        email: 'dominic.tarr@gmail.com',
+692 silly resolved        url: 'http://dominictarr.com' },
+692 silly resolved     scripts: { test: 'tap test/' },
+692 silly resolved     readme: '#config-chain\n\nUSE THIS MODULE TO LOAD ALL YOUR CONFIGURATIONS\n\n``` js\n\n  //npm install config-chain\n\n  var cc = require(\'config-chain\')\n    , opts = require(\'optimist\').argv //ALWAYS USE OPTIMIST FOR COMMAND LINE OPTIONS.\n    , env = opts.env || process.env.YOUR_APP_ENV || \'dev\' //SET YOUR ENV LIKE THIS.\n\n  // EACH ARG TO CONFIGURATOR IS LOADED INTO CONFIGURATION CHAIN\n  // EARLIER ITEMS OVERIDE LATER ITEMS\n  // PUTS COMMAND LINE OPTS FIRST, AND DEFAULTS LAST!\n\n  //strings are interpereted as filenames.\n  //will be loaded synchronously\n\n  var conf =\n  cc(\n    //OVERRIDE SETTINGS WITH COMMAND LINE OPTS\n    opts,\n\n    //ENV VARS IF PREFIXED WITH \'myApp_\'\n\n    cc.env(\'myApp_\'), //myApp_foo = \'like this\'\n\n    //FILE NAMED BY ENV\n    path.join(__dirname,  \'config.\' + env + \'.json\'),\n\n    //IF `env` is PRODUCTION\n    env === \'prod\'\n      ? path.join(__dirname, \'special.json\') //load a special file\n      : null //NULL IS IGNORED!\n\n    //SUBDIR FOR ENV CONFIG\n    path.join(__dirname,  \'config\', env, \'config.json\'),\n\n    //SEARCH PARENT DIRECTORIES FROM CURRENT DIR FOR FILE\n    cc.find(\'config.json\'),\n\n    //PUT DEFAULTS LAST\n    {\n      host: \'localhost\'\n      port: 8000\n    })\n\n  var host = conf.get(\'host\')\n\n  // or\n\n  var host = conf.store.host\n\n```\n\nFINALLY, EASY FLEXIBLE CONFIGURATIONS!\n\n##see also: [proto-list](https://github.com/isaacs/proto-list/)\n\nWHATS THAT YOU SAY?\n\nYOU WANT A "CLASS" SO THAT YOU CAN DO CRAYCRAY JQUERY CRAPS?\n\nEXTEND WITH YOUR OWN FUNCTIONALTY!?\n\n## CONFIGCHAIN LIVES TO SERVE ONLY YOU!\n\n```javascript\nvar cc = require(\'config-chain\')\n\n// all the stuff you did before\nvar config = cc({\n      some: \'object\'\n    },\n    cc.find(\'config.json\'),\n    cc.env(\'myApp_\')\n  )\n  // CONFIGS AS A SERVICE, aka "CaaS", aka EVERY DEVOPS DREAM OMG!\n  .addUrl(\'http://configurator:1234/my-configs\')\n  // ASYNC FTW!\n  .addFile(\'/path/to/file.json\')\n\n  // OBJECTS ARE OK TOO, they\'re SYNC but they still ORDER RIGHT\n  // BECAUSE PROMISES ARE USED BUT NO, NOT *THOSE* PROMISES, JUST\n  // ACTUAL PROMISES LIKE YOU MAKE TO YOUR MOM, KEPT OUT OF LOVE\n  .add({ another: \'object\' })\n\n  // DIE A THOUSAND DEATHS IF THIS EVER HAPPENS!!\n  .on(\'error\', function (er) {\n    // IF ONLY THERE WAS SOMETHIGN HARDER THAN THROW\n    // MY SORROW COULD BE ADEQUATELY EXPRESSED.  /o\\\n    throw er\n  })\n\n  // THROW A PARTY IN YOUR FACE WHEN ITS ALL LOADED!!\n  .on(\'load\', function (config) {\n    console.awesome(\'HOLY SHIT!\')\n  })\n```\n\n# BORING API DOCS\n\n## cc(...args)\n\nMAKE A CHAIN AND ADD ALL THE ARGS.\n\nIf the arg is a STRING, then it shall be a JSON FILENAME.\n\nSYNC I/O!\n\nRETURN THE CHAIN!\n\n## cc.json(...args)\n\nJoin the args INTO A JSON FILENAME!\n\nSYNC I/O!\n\n## cc.find(relativePath)\n\nSEEK the RELATIVE PATH by climbing the TREE OF DIRECTORIES.\n\nRETURN THE FOUND PATH!\n\nSYNC I/O!\n\n## cc.parse(content, file, type)\n\nParse the content string, and guess the type from either the\nspecified type or the filename.\n\nRETURN THE RESULTING OBJECT!\n\nNO I/O!\n\n## cc.env(prefix, env=process.env)\n\nGet all the keys on the provided env object (or process.env) which are\nprefixed by the specified prefix, and put the values on a new object.\n\nRETURN THE RESULTING OBJECT!\n\nNO I/O!\n\n## cc.ConfigChain()\n\nThe ConfigChain class for CRAY CRAY JQUERY STYLE METHOD CHAINING!\n\nOne of these is returned by the main exported function, as well.\n\nIt inherits (prototypically) from\n[ProtoList](https://github.com/isaacs/proto-list/), and also inherits\n(parasitically) from\n[EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter)\n\nIt has all the methods from both, and except where noted, they are\nunchanged.\n\n### LET IT BE KNOWN THAT chain IS AN INSTANCE OF ConfigChain.\n\n## chain.sources\n\nA list of all the places where it got stuff.  The keys are the names\npassed to addFile or addUrl etc, and the value is an object with some\ninfo about the data source.\n\n## chain.addFile(filename, type, [name=filename])\n\nFilename is the name of the file.  Name is an arbitrary string to be\nused later if you desire.  Type is either \'ini\' or \'json\', and will\ntry to guess intelligently if omitted.\n\nLoaded files can be saved later.\n\n## chain.addUrl(url, type, [name=url])\n\nSame as the filename thing, but with a url.\n\nCan\'t be saved later.\n\n## chain.addEnv(prefix, env, [name=\'env\'])\n\nAdd all the keys from the env object that start with the prefix.\n\n## chain.addString(data, file, type, [name])\n\nParse the string and add it to the set.  (Mainly used internally.)\n\n## chain.add(object, [name])\n\nAdd the object to the set.\n\n## chain.root {Object}\n\nThe root from which all the other config objects in the set descend\nprototypically.\n\nPut your defaults here.\n\n## chain.set(key, value, name)\n\nSet the key to the value on the named config object.  If name is\nunset, then set it on the first config object in the set.  (That is,\nthe one with the highest priority, which was added first.)\n\n## chain.get(key, [name])\n\nGet the key from the named config object explicitly, or from the\nresolved configs if not specified.\n\n## chain.save(name, type)\n\nWrite the named config object back to its origin.\n\nCurrently only supported for env and file config types.\n\nFor files, encode the data according to the type.\n\n## chain.on(\'save\', function () {})\n\nWhen one or more files are saved, emits `save` event when they\'re all\nsaved.\n\n## chain.on(\'load\', function (chain) {})\n\nWhen the config chain has loaded all the specified files and urls and\nsuch, the \'load\' event fires.\n',
+692 silly resolved     readmeFilename: 'readme.markdown',
+692 silly resolved     bugs: { url: 'https://github.com/dominictarr/config-chain/issues' },
+692 silly resolved     _id: 'config-chain@1.1.7',
+692 silly resolved     _from: 'config-chain@~1.1.1' },
+692 silly resolved   { name: 'once',
+692 silly resolved     version: '1.1.1',
+692 silly resolved     description: 'Run a function exactly one time',
+692 silly resolved     main: 'once.js',
+692 silly resolved     directories: { test: 'test' },
+692 silly resolved     dependencies: {},
+692 silly resolved     devDependencies: { tap: '~0.3.0' },
+692 silly resolved     scripts: { test: 'tap test/*.js' },
+692 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/once' },
+692 silly resolved     keywords: [ 'once', 'function', 'one', 'single' ],
+692 silly resolved     author:
+692 silly resolved      { name: 'Isaac Z. Schlueter',
+692 silly resolved        email: 'i@izs.me',
+692 silly resolved        url: 'http://blog.izs.me/' },
+692 silly resolved     license: 'BSD',
+692 silly resolved     readme: '# once\n\nOnly call a function once.\n\n## usage\n\n```javascript\nvar once = require(\'once\')\n\nfunction load (file, cb) {\n  cb = once(cb)\n  loader.load(\'file\')\n  loader.once(\'load\', cb)\n  loader.once(\'error\', cb)\n}\n```\n\nOr add to the Function.prototype in a responsible way:\n\n```javascript\n// only has to be done once\nrequire(\'once\').proto()\n\nfunction load (file, cb) {\n  cb = cb.once()\n  loader.load(\'file\')\n  loader.once(\'load\', cb)\n  loader.once(\'error\', cb)\n}\n```\n\nIronically, the prototype feature makes this module twice as\ncomplicated as necessary.\n',
+692 silly resolved     readmeFilename: 'README.md',
+692 silly resolved     bugs: { url: 'https://github.com/isaacs/once/issues' },
+692 silly resolved     _id: 'once@1.1.1',
+692 silly resolved     _from: 'once@~1.1.1' },
+692 silly resolved   { name: 'osenv',
+692 silly resolved     version: '0.0.3',
+692 silly resolved     main: 'osenv.js',
+692 silly resolved     directories: { test: 'test' },
+692 silly resolved     dependencies: {},
+692 silly resolved     devDependencies: { tap: '~0.2.5' },
+692 silly resolved     scripts: { test: 'tap test/*.js' },
+692 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/osenv' },
+692 silly resolved     keywords:
+692 silly resolved      [ 'environment',
+692 silly resolved        'variable',
+692 silly resolved        'home',
+692 silly resolved        'tmpdir',
+692 silly resolved        'path',
+692 silly resolved        'prompt',
+692 silly resolved        'ps1' ],
+692 silly resolved     author:
+692 silly resolved      { name: 'Isaac Z. Schlueter',
+692 silly resolved        email: 'i@izs.me',
+692 silly resolved        url: 'http://blog.izs.me/' },
+692 silly resolved     license: 'BSD',
+692 silly resolved     description: 'Look up environment settings specific to different operating systems',
+692 silly resolved     readme: '# osenv\n\nLook up environment settings specific to different operating systems.\n\n## Usage\n\n```javascript\nvar osenv = require(\'osenv\')\nvar path = osenv.path()\nvar user = osenv.user()\n// etc.\n\n// Some things are not reliably in the env, and have a fallback command:\nvar h = osenv.hostname(function (er, hostname) {\n  h = hostname\n})\n// This will still cause it to be memoized, so calling osenv.hostname()\n// is now an immediate operation.\n\n// You can always send a cb, which will get called in the nextTick\n// if it\'s been memoized, or wait for the fallback data if it wasn\'t\n// found in the environment.\nosenv.hostname(function (er, hostname) {\n  if (er) console.error(\'error looking up hostname\')\n  else console.log(\'this machine calls itself %s\', hostname)\n})\n```\n\n## osenv.hostname()\n\nThe machine name.  Calls `hostname` if not found.\n\n## osenv.user()\n\nThe currently logged-in user.  Calls `whoami` if not found.\n\n## osenv.prompt()\n\nEither PS1 on unix, or PROMPT on Windows.\n\n## osenv.tmpdir()\n\nThe place where temporary files should be created.\n\n## osenv.home()\n\nNo place like it.\n\n## osenv.path()\n\nAn array of the places that the operating system will search for\nexecutables.\n\n## osenv.editor() \n\nReturn the executable name of the editor program.  This uses the EDITOR\nand VISUAL environment variables, and falls back to `vi` on Unix, or\n`notepad.exe` on Windows.\n\n## osenv.shell()\n\nThe SHELL on Unix, which Windows calls the ComSpec.  Defaults to \'bash\'\nor \'cmd\'.\n',
+692 silly resolved     readmeFilename: 'README.md',
+692 silly resolved     bugs: { url: 'https://github.com/isaacs/osenv/issues' },
+692 silly resolved     _id: 'osenv@0.0.3',
+692 silly resolved     _from: 'osenv@0.0.3' },
+692 silly resolved   { name: 'semver',
+692 silly resolved     version: '1.1.4',
+692 silly resolved     description: 'The semantic version parser used by npm.',
+692 silly resolved     main: 'semver.js',
+692 silly resolved     scripts: { test: 'tap test.js' },
+692 silly resolved     devDependencies: { tap: '0.x >=0.0.4' },
+692 silly resolved     license:
+692 silly resolved      { type: 'MIT',
+692 silly resolved        url: 'https://github.com/isaacs/semver/raw/master/LICENSE' },
+692 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-semver.git' },
+692 silly resolved     bin: { semver: './bin/semver' },
+692 silly resolved     readme: 'semver(1) -- The semantic versioner for npm\n===========================================\n\n## Usage\n\n    $ npm install semver\n\n    semver.valid(\'1.2.3\') // \'1.2.3\'\n    semver.valid(\'a.b.c\') // null\n    semver.clean(\'  =v1.2.3   \') // \'1.2.3\'\n    semver.satisfies(\'1.2.3\', \'1.x || >=2.5.0 || 5.0.0 - 7.2.3\') // true\n    semver.gt(\'1.2.3\', \'9.8.7\') // false\n    semver.lt(\'1.2.3\', \'9.8.7\') // true\n\nAs a command-line utility:\n\n    $ semver -h\n\n    Usage: semver -v <version> [-r <range>]\n    Test if version(s) satisfy the supplied range(s),\n    and sort them.\n\n    Multiple versions or ranges may be supplied.\n\n    Program exits successfully if any valid version satisfies\n    all supplied ranges, and prints all satisfying versions.\n\n    If no versions are valid, or ranges are not satisfied,\n    then exits failure.\n\n    Versions are printed in ascending order, so supplying\n    multiple versions to the utility will just sort them.\n\n## Versions\n\nA version is the following things, in this order:\n\n* a number (Major)\n* a period\n* a number (minor)\n* a period\n* a number (patch)\n* OPTIONAL: a hyphen, followed by a number (build)\n* OPTIONAL: a collection of pretty much any non-whitespace characters\n  (tag)\n\nA leading `"="` or `"v"` character is stripped off and ignored.\n\n## Comparisons\n\nThe ordering of versions is done using the following algorithm, given\ntwo versions and asked to find the greater of the two:\n\n* If the majors are numerically different, then take the one\n  with a bigger major number. `2.3.4 > 1.3.4`\n* If the minors are numerically different, then take the one\n  with the bigger minor number. `2.3.4 > 2.2.4`\n* If the patches are numerically different, then take the one with the\n  bigger patch number. `2.3.4 > 2.3.3`\n* If only one of them has a build number, then take the one with the\n  build number.  `2.3.4-0 > 2.3.4`\n* If they both have build numbers, and the build numbers are numerically\n  different, then take the one with the bigger build number.\n  `2.3.4-10 > 2.3.4-9`\n* If only one of them has a tag, then take the one without the tag.\n  `2.3.4 > 2.3.4-beta`\n* If they both have tags, then take the one with the lexicographically\n  larger tag.  `2.3.4-beta > 2.3.4-alpha`\n* At this point, they\'re equal.\n\n## Ranges\n\nThe following range styles are supported:\n\n* `>1.2.3` Greater than a specific version.\n* `<1.2.3` Less than\n* `1.2.3 - 2.3.4` := `>=1.2.3 <=2.3.4`\n* `~1.2.3` := `>=1.2.3 <1.3.0`\n* `~1.2` := `>=1.2.0 <1.3.0`\n* `~1` := `>=1.0.0 <2.0.0`\n* `1.2.x` := `>=1.2.0 <1.3.0`\n* `1.x` := `>=1.0.0 <2.0.0`\n\nRanges can be joined with either a space (which implies "and") or a\n`||` (which implies "or").\n\n## Functions\n\n* valid(v): Return the parsed version, or null if it\'s not valid.\n* inc(v, release): Return the version incremented by the release type\n  (major, minor, patch, or build), or null if it\'s not valid.\n\n### Comparison\n\n* gt(v1, v2): `v1 > v2`\n* gte(v1, v2): `v1 >= v2`\n* lt(v1, v2): `v1 < v2`\n* lte(v1, v2): `v1 <= v2`\n* eq(v1, v2): `v1 == v2` This is true if they\'re logically equivalent,\n  even if they\'re not the exact same string.  You already know how to\n  compare strings.\n* neq(v1, v2): `v1 != v2` The opposite of eq.\n* cmp(v1, comparator, v2): Pass in a comparison string, and it\'ll call\n  the corresponding function above.  `"==="` and `"!=="` do simple\n  string comparison, but are included for completeness.  Throws if an\n  invalid comparison string is provided.\n* compare(v1, v2): Return 0 if v1 == v2, or 1 if v1 is greater, or -1 if\n  v2 is greater.  Sorts in ascending order if passed to Array.sort().\n* rcompare(v1, v2): The reverse of compare.  Sorts an array of versions\n  in descending order when passed to Array.sort().\n\n\n### Ranges\n\n* validRange(range): Return the valid range or null if it\'s not valid\n* satisfies(version, range): Return true if the version satisfies the\n  range.\n* maxSatisfying(versions, range): Return the highest version in the list\n  that satisfies the range, or null if none of them do.\n',
+692 silly resolved     readmeFilename: 'README.md',
+692 silly resolved     bugs: { url: 'https://github.com/isaacs/node-semver/issues' },
+692 silly resolved     _id: 'semver@1.1.4',
+692 silly resolved     _from: 'semver@~1.1.0' },
+692 silly resolved   { author:
+692 silly resolved      { name: 'Isaac Z. Schlueter',
+692 silly resolved        email: 'i@izs.me',
+692 silly resolved        url: 'http://blog.izs.me/' },
+692 silly resolved     name: 'ini',
+692 silly resolved     description: 'An ini encoder/decoder for node',
+692 silly resolved     version: '1.1.0',
+692 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/ini.git' },
+692 silly resolved     main: 'ini.js',
+692 silly resolved     scripts: { test: 'tap test/*.js' },
+692 silly resolved     engines: { node: '*' },
+692 silly resolved     dependencies: {},
+692 silly resolved     devDependencies: { tap: '~0.0.9' },
+692 silly resolved     readme: 'An ini format parser and serializer for node.\n\nSections are treated as nested objects.  Items before the first heading\nare saved on the object directly.\n\n## Usage\n\nConsider an ini-file `config.ini` that looks like this:\n\n    ; this comment is being ignored\n    scope = global\n\n    [database]\n    user = dbuser\n    password = dbpassword\n    database = use_this_database\n\n    [paths.default]\n    datadir = /var/lib/data\n    array[] = first value\n    array[] = second value\n    array[] = third value\n\nYou can read, manipulate and write the ini-file like so:\n\n    var fs = require(\'fs\')\n      , ini = require(\'ini\')\n\n    var config = ini.parse(fs.readFileSync(\'./config.ini\', \'utf-8\'))\n\n    config.scope = \'local\'\n    config.database.database = \'use_another_database\'\n    config.paths.default.tmpdir = \'/tmp\'\n    delete config.paths.default.datadir\n    config.paths.default.array.push(\'fourth value\')\n\n    fs.writeFileSync(\'./config_modified.ini\', ini.stringify(config, \'section\'))\n\nThis will result in a file called `config_modified.ini` being written to the filesystem with the following content:\n\n    [section]\n    scope = local\n    [section.database]\n    user = dbuser\n    password = dbpassword\n    database = use_another_database\n    [section.paths.default]\n    tmpdir = /tmp\n    array[] = first value\n    array[] = second value\n    array[] = third value\n    array[] = fourth value\n\n\n## API\n\n### decode(inistring)\nDecode the ini-style formatted `inistring` into a nested object.\n\n### parse(inistring)\nAlias for `decode(inistring)`\n\n### encode(object, [section])\nEncode the object `object` into an ini-style formatted string. If the optional parameter `section` is given, then all top-level properties of the object are put into this section and the `section`-string is prepended to all sub-sections, see the usage example above.\n\n### stringify(object, [section])\nAlias for `encode(object, [section])`\n\n### safe(val)\nEscapes the string `val` such that it is safe to be used as a key or value in an ini-file. Basically escapes quotes. For example\n\n    ini.safe(\'"unsafe string"\')\n\nwould result in\n\n    "\\"unsafe string\\""\n\n### unsafe(val)\nUnescapes the string `val`\n',
+692 silly resolved     readmeFilename: 'README.md',
+692 silly resolved     bugs: { url: 'https://github.com/isaacs/ini/issues' },
+692 silly resolved     _id: 'ini@1.1.0',
+692 silly resolved     _from: 'ini@~1.1.0' },
+692 silly resolved   { name: 'inherits',
+692 silly resolved     description: 'A tiny simple way to do classic inheritance in js',
+692 silly resolved     version: '1.0.0',
+692 silly resolved     keywords: [ 'inheritance', 'class', 'klass', 'oop', 'object-oriented' ],
+692 silly resolved     main: './inherits.js',
+692 silly resolved     repository: { type: 'git', url: 'https://github.com/isaacs/inherits' },
+692 silly resolved     author:
+692 silly resolved      { name: 'Isaac Z. Schlueter',
+692 silly resolved        email: 'i@izs.me',
+692 silly resolved        url: 'http://blog.izs.me/' },
+692 silly resolved     readme: 'A dead simple way to do inheritance in JS.\n\n    var inherits = require("inherits")\n\n    function Animal () {\n      this.alive = true\n    }\n    Animal.prototype.say = function (what) {\n      console.log(what)\n    }\n\n    inherits(Dog, Animal)\n    function Dog () {\n      Dog.super.apply(this)\n    }\n    Dog.prototype.sniff = function () {\n      this.say("sniff sniff")\n    }\n    Dog.prototype.bark = function () {\n      this.say("woof woof")\n    }\n\n    inherits(Chihuahua, Dog)\n    function Chihuahua () {\n      Chihuahua.super.apply(this)\n    }\n    Chihuahua.prototype.bark = function () {\n      this.say("yip yip")\n    }\n\n    // also works\n    function Cat () {\n      Cat.super.apply(this)\n    }\n    Cat.prototype.hiss = function () {\n      this.say("CHSKKSS!!")\n    }\n    inherits(Cat, Animal, {\n      meow: function () { this.say("miao miao") }\n    })\n    Cat.prototype.purr = function () {\n      this.say("purr purr")\n    }\n\n\n    var c = new Chihuahua\n    assert(c instanceof Chihuahua)\n    assert(c instanceof Dog)\n    assert(c instanceof Animal)\n\nThe actual function is laughably small.  10-lines small.\n',
+692 silly resolved     readmeFilename: 'README.md',
+692 silly resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+692 silly resolved     _id: 'inherits@1.0.0',
+692 silly resolved     _from: 'inherits@~1.0.0' } ]
+693 info install nopt@2.1.2 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+694 info install config-chain@1.1.7 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+695 info install once@1.1.1 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+696 info install osenv@0.0.3 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+697 info install semver@1.1.4 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+698 info install ini@1.1.0 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+699 info install inherits@1.0.0 into /usr/lib/node_modules/phantomjs/node_modules/npmconf
+700 info installOne nopt@2.1.2
+701 info installOne config-chain@1.1.7
+702 info installOne once@1.1.1
+703 info installOne osenv@0.0.3
+704 info installOne semver@1.1.4
+705 info installOne ini@1.1.0
+706 info installOne inherits@1.0.0
+707 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt unbuild
+708 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain unbuild
+709 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once unbuild
+710 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv unbuild
+711 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver unbuild
+712 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini unbuild
+713 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits unbuild
+714 verbose tar unpack /root/.npm/nopt/2.1.2/package.tgz
+715 silly lockFile c48c4123-odules-npmconf-node-modules-nopt tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt
+716 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt /root/.npm/c48c4123-odules-npmconf-node-modules-nopt.lock
+717 silly lockFile ff755a83--root-npm-nopt-2-1-2-package-tgz tar:///root/.npm/nopt/2.1.2/package.tgz
+718 verbose lock tar:///root/.npm/nopt/2.1.2/package.tgz /root/.npm/ff755a83--root-npm-nopt-2-1-2-package-tgz.lock
+719 verbose tar unpack /root/.npm/config-chain/1.1.7/package.tgz
+720 silly lockFile 16c5b3be-pmconf-node-modules-config-chain tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain
+721 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain /root/.npm/16c5b3be-pmconf-node-modules-config-chain.lock
+722 silly lockFile 60fb4155-m-config-chain-1-1-7-package-tgz tar:///root/.npm/config-chain/1.1.7/package.tgz
+723 verbose lock tar:///root/.npm/config-chain/1.1.7/package.tgz /root/.npm/60fb4155-m-config-chain-1-1-7-package-tgz.lock
+724 verbose tar unpack /root/.npm/once/1.1.1/package.tgz
+725 silly lockFile ac2e7bce-odules-npmconf-node-modules-once tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once
+726 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once /root/.npm/ac2e7bce-odules-npmconf-node-modules-once.lock
+727 silly lockFile e9e356fc--root-npm-once-1-1-1-package-tgz tar:///root/.npm/once/1.1.1/package.tgz
+728 verbose lock tar:///root/.npm/once/1.1.1/package.tgz /root/.npm/e9e356fc--root-npm-once-1-1-1-package-tgz.lock
+729 verbose tar unpack /root/.npm/osenv/0.0.3/package.tgz
+730 silly lockFile 79c4d5fe-dules-npmconf-node-modules-osenv tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv
+731 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv /root/.npm/79c4d5fe-dules-npmconf-node-modules-osenv.lock
+732 silly lockFile 0160ec9f-root-npm-osenv-0-0-3-package-tgz tar:///root/.npm/osenv/0.0.3/package.tgz
+733 verbose lock tar:///root/.npm/osenv/0.0.3/package.tgz /root/.npm/0160ec9f-root-npm-osenv-0-0-3-package-tgz.lock
+734 verbose tar unpack /root/.npm/semver/1.1.4/package.tgz
+735 silly lockFile 237b8914-ules-npmconf-node-modules-semver tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver
+736 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver /root/.npm/237b8914-ules-npmconf-node-modules-semver.lock
+737 silly lockFile d42a185e-oot-npm-semver-1-1-4-package-tgz tar:///root/.npm/semver/1.1.4/package.tgz
+738 verbose lock tar:///root/.npm/semver/1.1.4/package.tgz /root/.npm/d42a185e-oot-npm-semver-1-1-4-package-tgz.lock
+739 verbose tar unpack /root/.npm/ini/1.1.0/package.tgz
+740 silly lockFile 4f5d898e-modules-npmconf-node-modules-ini tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini
+741 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini /root/.npm/4f5d898e-modules-npmconf-node-modules-ini.lock
+742 silly lockFile a6ef91d8-r-root-npm-ini-1-1-0-package-tgz tar:///root/.npm/ini/1.1.0/package.tgz
+743 verbose lock tar:///root/.npm/ini/1.1.0/package.tgz /root/.npm/a6ef91d8-r-root-npm-ini-1-1-0-package-tgz.lock
+744 verbose tar unpack /root/.npm/inherits/1.0.0/package.tgz
+745 silly lockFile 4dba19a5-es-npmconf-node-modules-inherits tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits
+746 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits /root/.npm/4dba19a5-es-npmconf-node-modules-inherits.lock
+747 silly lockFile 66c71b08-t-npm-inherits-1-0-0-package-tgz tar:///root/.npm/inherits/1.0.0/package.tgz
+748 verbose lock tar:///root/.npm/inherits/1.0.0/package.tgz /root/.npm/66c71b08-t-npm-inherits-1-0-0-package-tgz.lock
+749 silly gunzTarPerm modes [ '755', '644' ]
+750 silly gunzTarPerm modes [ '755', '644' ]
+751 silly gunzTarPerm modes [ '755', '644' ]
+752 silly gunzTarPerm modes [ '755', '644' ]
+753 silly gunzTarPerm modes [ '755', '644' ]
+754 silly gunzTarPerm modes [ '755', '644' ]
+755 silly gunzTarPerm modes [ '755', '644' ]
+756 silly gunzTarPerm extractEntry package.json
+757 silly gunzTarPerm extractEntry package.json
+758 silly gunzTarPerm extractEntry package.json
+759 silly gunzTarPerm extractEntry package.json
+760 silly gunzTarPerm extractEntry package.json
+761 silly gunzTarPerm extractEntry package.json
+762 silly gunzTarPerm extractEntry package.json
+763 silly gunzTarPerm extractEntry .npmignore
+764 silly gunzTarPerm extractEntry README.md
+765 silly gunzTarPerm extractEntry .npmignore
+766 silly gunzTarPerm extractEntry LICENCE
+767 silly gunzTarPerm extractEntry README.md
+768 silly gunzTarPerm extractEntry LICENSE
+769 silly gunzTarPerm extractEntry README.md
+770 silly gunzTarPerm extractEntry LICENSE
+771 silly gunzTarPerm extractEntry README.md
+772 silly gunzTarPerm extractEntry LICENSE
+773 silly gunzTarPerm extractEntry README.md
+774 silly gunzTarPerm extractEntry LICENSE
+775 silly gunzTarPerm extractEntry README.md
+776 silly gunzTarPerm extractEntry inherits.js
+777 silly gunzTarPerm extractEntry LICENSE
+778 silly gunzTarPerm extractEntry bin/nopt.js
+779 silly gunzTarPerm extractEntry index.js
+780 silly gunzTarPerm extractEntry readme.markdown
+781 silly gunzTarPerm extractEntry semver.js
+782 silly gunzTarPerm extractEntry test.js
+783 silly gunzTarPerm extractEntry bin/semver
+784 silly gunzTarPerm extractEntry ini.js
+785 silly gunzTarPerm extractEntry test/bar.js
+786 silly gunzTarPerm extractEntry once.js
+787 silly gunzTarPerm extractEntry test/once.js
+788 silly gunzTarPerm extractEntry osenv.js
+789 silly gunzTarPerm extractEntry test/unix.js
+790 silly gunzTarPerm extractEntry examples/my-program.js
+791 silly gunzTarPerm extractEntry lib/nopt.js
+792 silly gunzTarPerm extractEntry test/broken.js
+793 silly gunzTarPerm extractEntry test/windows.js
+794 silly gunzTarPerm extractEntry test/foo.js
+795 silly gunzTarPerm extractEntry test/fixtures/foo.ini
+796 silly gunzTarPerm extractEntry test/chain-class.js
+797 silly gunzTarPerm extractEntry test/env.js
+798 silly lockFile 4dba19a5-es-npmconf-node-modules-inherits tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits
+799 silly lockFile 4dba19a5-es-npmconf-node-modules-inherits tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits
+800 silly lockFile 66c71b08-t-npm-inherits-1-0-0-package-tgz tar:///root/.npm/inherits/1.0.0/package.tgz
+801 silly lockFile 66c71b08-t-npm-inherits-1-0-0-package-tgz tar:///root/.npm/inherits/1.0.0/package.tgz
+802 info preinstall inherits@1.0.0
+803 verbose readDependencies using package.json deps
+804 verbose readDependencies using package.json deps
+805 silly resolved []
+806 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits
+807 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/inherits
+808 verbose linkStuff [ true,
+808 verbose linkStuff   '/usr/lib/node_modules',
+808 verbose linkStuff   false,
+808 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+809 info linkStuff inherits@1.0.0
+810 verbose linkBins inherits@1.0.0
+811 verbose linkMans inherits@1.0.0
+812 verbose rebuildBundles inherits@1.0.0
+813 info install inherits@1.0.0
+814 info postinstall inherits@1.0.0
+815 silly gunzTarPerm extractEntry test/find-file.js
+816 silly gunzTarPerm extractEntry test/ignore-unfound-file.js
+817 silly lockFile ac2e7bce-odules-npmconf-node-modules-once tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once
+818 silly lockFile ac2e7bce-odules-npmconf-node-modules-once tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once
+819 silly lockFile e9e356fc--root-npm-once-1-1-1-package-tgz tar:///root/.npm/once/1.1.1/package.tgz
+820 silly lockFile e9e356fc--root-npm-once-1-1-1-package-tgz tar:///root/.npm/once/1.1.1/package.tgz
+821 info preinstall once@1.1.1
+822 verbose readDependencies using package.json deps
+823 verbose readDependencies using package.json deps
+824 silly resolved []
+825 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once
+826 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/once
+827 verbose linkStuff [ true,
+827 verbose linkStuff   '/usr/lib/node_modules',
+827 verbose linkStuff   false,
+827 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+828 info linkStuff once@1.1.1
+829 verbose linkBins once@1.1.1
+830 verbose linkMans once@1.1.1
+831 verbose rebuildBundles once@1.1.1
+832 info install once@1.1.1
+833 silly gunzTarPerm extractEntry test/ini.js
+834 silly gunzTarPerm extractEntry test/save.js
+835 info postinstall once@1.1.1
+836 silly gunzTarPerm extractEntry test/broken.json
+837 silly lockFile 79c4d5fe-dules-npmconf-node-modules-osenv tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv
+838 silly lockFile 79c4d5fe-dules-npmconf-node-modules-osenv tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv
+839 silly lockFile 0160ec9f-root-npm-osenv-0-0-3-package-tgz tar:///root/.npm/osenv/0.0.3/package.tgz
+840 silly lockFile 0160ec9f-root-npm-osenv-0-0-3-package-tgz tar:///root/.npm/osenv/0.0.3/package.tgz
+841 info preinstall osenv@0.0.3
+842 verbose readDependencies using package.json deps
+843 verbose readDependencies using package.json deps
+844 silly resolved []
+845 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv
+846 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/osenv
+847 verbose linkStuff [ true,
+847 verbose linkStuff   '/usr/lib/node_modules',
+847 verbose linkStuff   false,
+847 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+848 info linkStuff osenv@0.0.3
+849 verbose linkBins osenv@0.0.3
+850 verbose linkMans osenv@0.0.3
+851 verbose rebuildBundles osenv@0.0.3
+852 info install osenv@0.0.3
+853 silly lockFile 4f5d898e-modules-npmconf-node-modules-ini tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini
+854 silly lockFile 4f5d898e-modules-npmconf-node-modules-ini tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini
+855 silly lockFile a6ef91d8-r-root-npm-ini-1-1-0-package-tgz tar:///root/.npm/ini/1.1.0/package.tgz
+856 silly lockFile a6ef91d8-r-root-npm-ini-1-1-0-package-tgz tar:///root/.npm/ini/1.1.0/package.tgz
+857 info postinstall osenv@0.0.3
+858 info preinstall ini@1.1.0
+859 verbose readDependencies using package.json deps
+860 verbose readDependencies using package.json deps
+861 silly resolved []
+862 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini
+863 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/ini
+864 verbose linkStuff [ true,
+864 verbose linkStuff   '/usr/lib/node_modules',
+864 verbose linkStuff   false,
+864 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+865 info linkStuff ini@1.1.0
+866 verbose linkBins ini@1.1.0
+867 verbose linkMans ini@1.1.0
+868 verbose rebuildBundles ini@1.1.0
+869 info install ini@1.1.0
+870 info postinstall ini@1.1.0
+871 silly lockFile 237b8914-ules-npmconf-node-modules-semver tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver
+872 silly lockFile 237b8914-ules-npmconf-node-modules-semver tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver
+873 silly lockFile d42a185e-oot-npm-semver-1-1-4-package-tgz tar:///root/.npm/semver/1.1.4/package.tgz
+874 silly lockFile d42a185e-oot-npm-semver-1-1-4-package-tgz tar:///root/.npm/semver/1.1.4/package.tgz
+875 info preinstall semver@1.1.4
+876 verbose readDependencies using package.json deps
+877 silly lockFile c48c4123-odules-npmconf-node-modules-nopt tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt
+878 silly lockFile c48c4123-odules-npmconf-node-modules-nopt tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt
+879 verbose readDependencies using package.json deps
+880 silly resolved []
+881 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver
+882 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/semver
+883 verbose linkStuff [ true,
+883 verbose linkStuff   '/usr/lib/node_modules',
+883 verbose linkStuff   false,
+883 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+884 info linkStuff semver@1.1.4
+885 verbose linkBins semver@1.1.4
+886 verbose link bins [ { semver: './bin/semver' },
+886 verbose link bins   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/.bin',
+886 verbose link bins   false ]
+887 verbose linkMans semver@1.1.4
+888 verbose rebuildBundles semver@1.1.4
+889 silly lockFile ff755a83--root-npm-nopt-2-1-2-package-tgz tar:///root/.npm/nopt/2.1.2/package.tgz
+890 silly lockFile ff755a83--root-npm-nopt-2-1-2-package-tgz tar:///root/.npm/nopt/2.1.2/package.tgz
+891 info preinstall nopt@2.1.2
+892 info install semver@1.1.4
+893 verbose readDependencies using package.json deps
+894 info postinstall semver@1.1.4
+895 verbose readDependencies using package.json deps
+896 verbose cache add [ 'abbrev@1', null ]
+897 verbose cache add name=undefined spec="abbrev@1" args=["abbrev@1",null]
+898 verbose parsed url { protocol: null,
+898 verbose parsed url   slashes: null,
+898 verbose parsed url   auth: null,
+898 verbose parsed url   host: null,
+898 verbose parsed url   port: null,
+898 verbose parsed url   hostname: null,
+898 verbose parsed url   hash: null,
+898 verbose parsed url   search: null,
+898 verbose parsed url   query: null,
+898 verbose parsed url   pathname: 'abbrev@1',
+898 verbose parsed url   path: 'abbrev@1',
+898 verbose parsed url   href: 'abbrev@1' }
+899 verbose cache add name="abbrev" spec="1" args=["abbrev","1"]
+900 verbose parsed url { protocol: null,
+900 verbose parsed url   slashes: null,
+900 verbose parsed url   auth: null,
+900 verbose parsed url   host: null,
+900 verbose parsed url   port: null,
+900 verbose parsed url   hostname: null,
+900 verbose parsed url   hash: null,
+900 verbose parsed url   search: null,
+900 verbose parsed url   query: null,
+900 verbose parsed url   pathname: '1',
+900 verbose parsed url   path: '1',
+900 verbose parsed url   href: '1' }
+901 verbose addNamed [ 'abbrev', '1' ]
+902 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+903 silly lockFile 6830b531-abbrev-1 abbrev@1
+904 verbose lock abbrev@1 /root/.npm/6830b531-abbrev-1.lock
+905 silly addNameRange { name: 'abbrev', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+906 verbose url raw abbrev
+907 verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+908 verbose url resolved https://registry.npmjs.org/abbrev
+909 info trying registry request attempt 1 at 11:54:09
+910 verbose etag "B9SRL9J8QVQ5D52DENCL2N9DQ"
+911 http GET https://registry.npmjs.org/abbrev
+912 silly lockFile 16c5b3be-pmconf-node-modules-config-chain tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain
+913 silly lockFile 16c5b3be-pmconf-node-modules-config-chain tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain
+914 silly lockFile 60fb4155-m-config-chain-1-1-7-package-tgz tar:///root/.npm/config-chain/1.1.7/package.tgz
+915 silly lockFile 60fb4155-m-config-chain-1-1-7-package-tgz tar:///root/.npm/config-chain/1.1.7/package.tgz
+916 info preinstall config-chain@1.1.7
+917 verbose readDependencies using package.json deps
+918 verbose readDependencies using package.json deps
+919 verbose cache add [ 'proto-list@~1.2.1', null ]
+920 verbose cache add name=undefined spec="proto-list@~1.2.1" args=["proto-list@~1.2.1",null]
+921 verbose parsed url { protocol: null,
+921 verbose parsed url   slashes: null,
+921 verbose parsed url   auth: null,
+921 verbose parsed url   host: null,
+921 verbose parsed url   port: null,
+921 verbose parsed url   hostname: null,
+921 verbose parsed url   hash: null,
+921 verbose parsed url   search: null,
+921 verbose parsed url   query: null,
+921 verbose parsed url   pathname: 'proto-list@~1.2.1',
+921 verbose parsed url   path: 'proto-list@~1.2.1',
+921 verbose parsed url   href: 'proto-list@~1.2.1' }
+922 verbose cache add name="proto-list" spec="~1.2.1" args=["proto-list","~1.2.1"]
+923 verbose parsed url { protocol: null,
+923 verbose parsed url   slashes: null,
+923 verbose parsed url   auth: null,
+923 verbose parsed url   host: null,
+923 verbose parsed url   port: null,
+923 verbose parsed url   hostname: null,
+923 verbose parsed url   hash: null,
+923 verbose parsed url   search: null,
+923 verbose parsed url   query: null,
+923 verbose parsed url   pathname: '~1.2.1',
+923 verbose parsed url   path: '~1.2.1',
+923 verbose parsed url   href: '~1.2.1' }
+924 verbose addNamed [ 'proto-list', '~1.2.1' ]
+925 verbose addNamed [ null, '>=1.2.1-0 <1.3.0-0' ]
+926 silly lockFile 5d8d6d63-proto-list-1-2-1 proto-list@~1.2.1
+927 verbose lock proto-list@~1.2.1 /root/.npm/5d8d6d63-proto-list-1-2-1.lock
+928 silly addNameRange { name: 'proto-list',
+928 silly addNameRange   range: '>=1.2.1-0 <1.3.0-0',
+928 silly addNameRange   hasData: false }
+929 verbose url raw proto-list
+930 verbose url resolving [ 'https://registry.npmjs.org/', './proto-list' ]
+931 verbose url resolved https://registry.npmjs.org/proto-list
+932 info trying registry request attempt 1 at 11:54:09
+933 verbose etag "CJFVCA9TDUD13V86J5I3IJ35B"
+934 http GET https://registry.npmjs.org/proto-list
+935 http 304 https://registry.npmjs.org/abbrev
+936 silly registry.get cb [ 304,
+936 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+936 silly registry.get     etag: '"B9SRL9J8QVQ5D52DENCL2N9DQ"',
+936 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:53 GMT',
+936 silly registry.get     'content-length': '0' } ]
+937 verbose etag abbrev from cache
+938 http 304 https://registry.npmjs.org/proto-list
+939 silly registry.get cb [ 304,
+939 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+939 silly registry.get     etag: '"CJFVCA9TDUD13V86J5I3IJ35B"',
+939 silly registry.get     date: 'Fri, 09 Aug 2013 18:53:53 GMT',
+939 silly registry.get     'content-length': '0' } ]
+940 verbose etag proto-list from cache
+941 silly addNameRange number 2 { name: 'abbrev', range: '>=1.0.0-0 <2.0.0-0', hasData: true }
+942 silly addNameRange versions [ 'abbrev', [ '1.0.3', '1.0.4' ] ]
+943 verbose addNamed [ 'abbrev', '1.0.4' ]
+944 verbose addNamed [ '1.0.4', '1.0.4' ]
+945 silly lockFile 64a4e3a6-abbrev-1-0-4 abbrev@1.0.4
+946 verbose lock abbrev@1.0.4 /root/.npm/64a4e3a6-abbrev-1-0-4.lock
+947 silly addNameRange number 2 { name: 'proto-list',
+947 silly addNameRange   range: '>=1.2.1-0 <1.3.0-0',
+947 silly addNameRange   hasData: true }
+948 silly addNameRange versions [ 'proto-list',
+948 silly addNameRange   [ '1.0.0', '1.1.0', '1.2.0', '1.2.1', '1.2.2' ] ]
+949 verbose addNamed [ 'proto-list', '1.2.2' ]
+950 verbose addNamed [ '1.2.2', '1.2.2' ]
+951 silly lockFile bd933072-proto-list-1-2-2 proto-list@1.2.2
+952 verbose lock proto-list@1.2.2 /root/.npm/bd933072-proto-list-1-2-2.lock
+953 silly lockFile 64a4e3a6-abbrev-1-0-4 abbrev@1.0.4
+954 silly lockFile 64a4e3a6-abbrev-1-0-4 abbrev@1.0.4
+955 silly lockFile 6830b531-abbrev-1 abbrev@1
+956 silly lockFile 6830b531-abbrev-1 abbrev@1
+957 silly lockFile bd933072-proto-list-1-2-2 proto-list@1.2.2
+958 silly lockFile bd933072-proto-list-1-2-2 proto-list@1.2.2
+959 silly resolved [ { name: 'abbrev',
+959 silly resolved     version: '1.0.4',
+959 silly resolved     description: 'Like ruby\'s abbrev module, but in js',
+959 silly resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+959 silly resolved     main: './lib/abbrev.js',
+959 silly resolved     scripts: { test: 'node lib/abbrev.js' },
+959 silly resolved     repository: { type: 'git', url: 'http://github.com/isaacs/abbrev-js' },
+959 silly resolved     license:
+959 silly resolved      { type: 'MIT',
+959 silly resolved        url: 'https://github.com/isaacs/abbrev-js/raw/master/LICENSE' },
+959 silly resolved     readme: '# abbrev-js\n\nJust like [ruby\'s Abbrev](http://apidock.com/ruby/Abbrev).\n\nUsage:\n\n    var abbrev = require("abbrev");\n    abbrev("foo", "fool", "folding", "flop");\n    \n    // returns:\n    { fl: \'flop\'\n    , flo: \'flop\'\n    , flop: \'flop\'\n    , fol: \'folding\'\n    , fold: \'folding\'\n    , foldi: \'folding\'\n    , foldin: \'folding\'\n    , folding: \'folding\'\n    , foo: \'foo\'\n    , fool: \'fool\'\n    }\n\nThis is handy for command-line scripts, or other cases where you want to be able to accept shorthands.\n',
+959 silly resolved     readmeFilename: 'README.md',
+959 silly resolved     bugs: { url: 'https://github.com/isaacs/abbrev-js/issues' },
+959 silly resolved     _id: 'abbrev@1.0.4',
+959 silly resolved     _from: 'abbrev@1' } ]
+960 info install abbrev@1.0.4 into /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt
+961 info installOne abbrev@1.0.4
+962 silly lockFile 5d8d6d63-proto-list-1-2-1 proto-list@~1.2.1
+963 silly lockFile 5d8d6d63-proto-list-1-2-1 proto-list@~1.2.1
+964 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev unbuild
+965 silly resolved [ { name: 'proto-list',
+965 silly resolved     version: '1.2.2',
+965 silly resolved     description: 'A utility for managing a prototype chain',
+965 silly resolved     main: './proto-list.js',
+965 silly resolved     author:
+965 silly resolved      { name: 'Isaac Z. Schlueter',
+965 silly resolved        email: 'i@izs.me',
+965 silly resolved        url: 'http://blog.izs.me/' },
+965 silly resolved     scripts: { test: 'tap test/*.js' },
+965 silly resolved     repository: { type: 'git', url: 'https://github.com/isaacs/proto-list' },
+965 silly resolved     license:
+965 silly resolved      { type: 'MIT',
+965 silly resolved        url: 'https://github.com/isaacs/proto-list/blob/master/LICENSE' },
+965 silly resolved     devDependencies: { tap: '0' },
+965 silly resolved     readme: 'A list of objects, bound by their prototype chain.\n\nUsed in npm\'s config stuff.\n',
+965 silly resolved     readmeFilename: 'README.md',
+965 silly resolved     bugs: { url: 'https://github.com/isaacs/proto-list/issues' },
+965 silly resolved     _id: 'proto-list@1.2.2',
+965 silly resolved     _from: 'proto-list@~1.2.1' } ]
+966 info install proto-list@1.2.2 into /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain
+967 info installOne proto-list@1.2.2
+968 info /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list unbuild
+969 verbose tar unpack /root/.npm/abbrev/1.0.4/package.tgz
+970 silly lockFile 17940b9f-modules-nopt-node-modules-abbrev tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev
+971 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev /root/.npm/17940b9f-modules-nopt-node-modules-abbrev.lock
+972 silly lockFile 9dffc0d6-oot-npm-abbrev-1-0-4-package-tgz tar:///root/.npm/abbrev/1.0.4/package.tgz
+973 verbose lock tar:///root/.npm/abbrev/1.0.4/package.tgz /root/.npm/9dffc0d6-oot-npm-abbrev-1-0-4-package-tgz.lock
+974 verbose tar unpack /root/.npm/proto-list/1.2.2/package.tgz
+975 silly lockFile 4999b2a2-ig-chain-node-modules-proto-list tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list
+976 verbose lock tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list /root/.npm/4999b2a2-ig-chain-node-modules-proto-list.lock
+977 silly lockFile 94e743ec-npm-proto-list-1-2-2-package-tgz tar:///root/.npm/proto-list/1.2.2/package.tgz
+978 verbose lock tar:///root/.npm/proto-list/1.2.2/package.tgz /root/.npm/94e743ec-npm-proto-list-1-2-2-package-tgz.lock
+979 silly gunzTarPerm modes [ '755', '644' ]
+980 silly gunzTarPerm modes [ '755', '644' ]
+981 silly gunzTarPerm extractEntry package.json
+982 silly gunzTarPerm extractEntry package.json
+983 silly gunzTarPerm extractEntry README.md
+984 silly gunzTarPerm extractEntry LICENSE
+985 silly gunzTarPerm extractEntry README.md
+986 silly gunzTarPerm extractEntry LICENSE
+987 silly gunzTarPerm extractEntry lib/abbrev.js
+988 silly gunzTarPerm extractEntry proto-list.js
+989 silly gunzTarPerm extractEntry test/basic.js
+990 silly lockFile 17940b9f-modules-nopt-node-modules-abbrev tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev
+991 silly lockFile 17940b9f-modules-nopt-node-modules-abbrev tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev
+992 silly lockFile 9dffc0d6-oot-npm-abbrev-1-0-4-package-tgz tar:///root/.npm/abbrev/1.0.4/package.tgz
+993 silly lockFile 9dffc0d6-oot-npm-abbrev-1-0-4-package-tgz tar:///root/.npm/abbrev/1.0.4/package.tgz
+994 info preinstall abbrev@1.0.4
+995 verbose readDependencies using package.json deps
+996 verbose readDependencies using package.json deps
+997 silly resolved []
+998 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev
+999 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules/abbrev
+1000 verbose linkStuff [ true,
+1000 verbose linkStuff   '/usr/lib/node_modules',
+1000 verbose linkStuff   false,
+1000 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt/node_modules' ]
+1001 info linkStuff abbrev@1.0.4
+1002 verbose linkBins abbrev@1.0.4
+1003 verbose linkMans abbrev@1.0.4
+1004 verbose rebuildBundles abbrev@1.0.4
+1005 info install abbrev@1.0.4
+1006 silly lockFile 4999b2a2-ig-chain-node-modules-proto-list tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list
+1007 silly lockFile 4999b2a2-ig-chain-node-modules-proto-list tar:///usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list
+1008 silly lockFile 94e743ec-npm-proto-list-1-2-2-package-tgz tar:///root/.npm/proto-list/1.2.2/package.tgz
+1009 silly lockFile 94e743ec-npm-proto-list-1-2-2-package-tgz tar:///root/.npm/proto-list/1.2.2/package.tgz
+1010 info postinstall abbrev@1.0.4
+1011 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt
+1012 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/nopt
+1013 verbose linkStuff [ true,
+1013 verbose linkStuff   '/usr/lib/node_modules',
+1013 verbose linkStuff   false,
+1013 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+1014 info linkStuff nopt@2.1.2
+1015 verbose linkBins nopt@2.1.2
+1016 verbose link bins [ { nopt: './bin/nopt.js' },
+1016 verbose link bins   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/.bin',
+1016 verbose link bins   false ]
+1017 verbose linkMans nopt@2.1.2
+1018 verbose rebuildBundles nopt@2.1.2
+1019 verbose rebuildBundles [ 'abbrev' ]
+1020 info preinstall proto-list@1.2.2
+1021 verbose readDependencies using package.json deps
+1022 verbose readDependencies using package.json deps
+1023 silly resolved []
+1024 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list
+1025 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules/proto-list
+1026 verbose linkStuff [ true,
+1026 verbose linkStuff   '/usr/lib/node_modules',
+1026 verbose linkStuff   false,
+1026 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/node_modules' ]
+1027 info linkStuff proto-list@1.2.2
+1028 verbose linkBins proto-list@1.2.2
+1029 verbose linkMans proto-list@1.2.2
+1030 verbose rebuildBundles proto-list@1.2.2
+1031 info install proto-list@1.2.2
+1032 info install nopt@2.1.2
+1033 info postinstall proto-list@1.2.2
+1034 info postinstall nopt@2.1.2
+1035 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain
+1036 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain
+1037 verbose linkStuff [ true,
+1037 verbose linkStuff   '/usr/lib/node_modules',
+1037 verbose linkStuff   false,
+1037 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules/npmconf/node_modules' ]
+1038 info linkStuff config-chain@1.1.7
+1039 verbose linkBins config-chain@1.1.7
+1040 verbose linkMans config-chain@1.1.7
+1041 verbose rebuildBundles config-chain@1.1.7
+1042 verbose rebuildBundles [ 'proto-list' ]
+1043 info install config-chain@1.1.7
+1044 info postinstall config-chain@1.1.7
+1045 verbose about to build /usr/lib/node_modules/phantomjs/node_modules/npmconf
+1046 info build /usr/lib/node_modules/phantomjs/node_modules/npmconf
+1047 verbose linkStuff [ true,
+1047 verbose linkStuff   '/usr/lib/node_modules',
+1047 verbose linkStuff   false,
+1047 verbose linkStuff   '/usr/lib/node_modules/phantomjs/node_modules' ]
+1048 info linkStuff npmconf@0.0.24
+1049 verbose linkBins npmconf@0.0.24
+1050 verbose linkMans npmconf@0.0.24
+1051 verbose rebuildBundles npmconf@0.0.24
+1052 verbose rebuildBundles [ '.bin',
+1052 verbose rebuildBundles   'config-chain',
+1052 verbose rebuildBundles   'inherits',
+1052 verbose rebuildBundles   'ini',
+1052 verbose rebuildBundles   'nopt',
+1052 verbose rebuildBundles   'once',
+1052 verbose rebuildBundles   'osenv',
+1052 verbose rebuildBundles   'semver' ]
+1053 info install npmconf@0.0.24
+1054 info postinstall npmconf@0.0.24
+1055 verbose about to build /usr/lib/node_modules/phantomjs
+1056 info build /usr/lib/node_modules/phantomjs
+1057 verbose linkStuff [ true, '/usr/lib/node_modules', true, '/usr/lib/node_modules' ]
+1058 info linkStuff phantomjs@1.9.1-0
+1059 verbose linkBins phantomjs@1.9.1-0
+1060 verbose link bins [ { phantomjs: './bin/phantomjs' }, '/usr/bin', true ]
+1061 verbose linkMans phantomjs@1.9.1-0
+1062 verbose rebuildBundles phantomjs@1.9.1-0
+1063 verbose rebuildBundles [ '.bin', 'adm-zip', 'kew', 'mkdirp', 'ncp', 'npmconf', 'rimraf' ]
+1064 info /usr/lib/node_modules/phantomjs unbuild
+1065 info preuninstall phantomjs@1.9.1-0
+1066 info uninstall phantomjs@1.9.1-0
+1067 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild phantomjs@1.9.1-0
+1068 verbose /usr/bin,[object Object] binRoot
+1069 info postuninstall phantomjs@1.9.1-0
+1070 error Refusing to delete: /usr/bin/phantomjs not in /usr/lib/node_modules/phantomjs
+File exists: /usr/bin/phantomjs
+Move it away, and try again.
+1071 error System Linux 3.9.9-201.fc18.x86_64
+1072 error command "node" "/usr/bin/npm" "install" "-g" "phantomjs"
+1073 error cwd /var/www/angular-natural-language
+1074 error node -v v0.10.13
+1075 error npm -v 1.3.7
+1076 error path /usr/bin/phantomjs
+1077 error code EEXIST
+1078 verbose exit [ 1, true ]
