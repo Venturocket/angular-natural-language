@@ -1,1 +1,21 @@
-bower.json
+{
+    "name": "angular-natural-language",
+    "version": "0.0.0",
+    "description": "Natural language form element directives.",
+    "main": "",
+    "scripts": {
+        "test": "karma start --single-run --no-auto-watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Venturocket/angular-natural-language.git"
+    },
+    "author": "Venturocket, Inc.",
+    "license": "MIT",
+    "devDependencies": {
+        "karma": "~0.10",
+        "karma-jasmine": "*",
+        "karma-chrome-launcher": "*",
+        "karma-firefox-launcher": "*"
+    }
+}
