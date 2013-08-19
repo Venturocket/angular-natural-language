@@ -11,11 +11,15 @@ module.exports = function(config){
         frameworks: ['jasmine'],
 
         files: [
+            //libraries
             'lib/*.js',
             'app/components/angular/angular.js',
             'app/components/angular-mocks/angular-mocks.js',
-            //'app/components/angular-scenario/angular-scenario.js',
+
+            //our directive(s)
             'natural-language.js',
+
+            //tests
             'test/*.js'
         ],
         autoWatch: true,
