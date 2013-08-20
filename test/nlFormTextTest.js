@@ -28,7 +28,7 @@ describe('naturalLanguageText', function(){
         scope.$digest();
     }));
 
-    it('should create elements based on the original <input/>', inject(function(){
+    /*it('should create elements based on the original <input/>', inject(function(){
         var container = elm.find('.nl-ti-text');
         var a = container.find('a');
 
@@ -64,5 +64,5 @@ describe('naturalLanguageText', function(){
         container.find('button').click();
 
         //expect(container.find('a').html()).toBe('test');
-    }));
+    }));*/
 });

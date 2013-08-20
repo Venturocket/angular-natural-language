@@ -4,6 +4,7 @@ dist
 .sass-cache
 app/components
 npm-debug.log
+karma.conf.local.js
 
 #IDE
 /.idea

@@ -18,7 +18,7 @@
         /* general style for the form */
     .nl-form {
         width: 100%;
-        margin: 0.3em auto 0 auto;
+        margin: 3em auto 0 auto;
         font-size: 4em;
         line-height: 1.5;
     }
@@ -292,43 +292,52 @@
     </style>
 </head>
 <body ng-app="ExampleApp">
-    <form id="nl-form" class="nl-form">
+
+    <form id="nl-form" class="nl-form" ng-controller="MainCtrl">
         I feel like eating
-        <select natural-language-select="" ng-transclude="">
-            <option value="1" selected natural-language-select-option="">any food</option>
-            <option value="2" natural-language-select-option>Indian</option>
-            <option value="3" natural-language-select-option>French</option>
-            <option value="4" natural-language-select-option>Japanese</option>
-            <option value="2" natural-language-select-option>Italian</option>
-        </select>
+	    <nl-select value='answers.food' options='foods' multiple="or" empty="nothing"></nl-select>
         <br />in a
-        <select natural-language-select="" ng-transclude="">
-            <option value="1" selected>standard</option>
-            <option value="2">fancy</option>
-            <option value="3">hip</option>
-            <option value="4">traditional</option>
-            <option value="2">fine</option>
-        </select>
+        <nl-select value='answers.style' options='styles'></nl-select>
         restaurant
-        <select natural-language-select="" ng-transclude="">
-            <option value="1" selected>anytime</option>
-            <option value="1">at 7 p.m.</option>
-            <option value="2">at 8 p.m.</option>
-            <option value="3">at 9 p.m.</option>
-        </select>
-        in <input natural-language-text="" type="text" value="" placeholder="any city" subline="For example: <em>Los Angeles</em> or <em>New York</em>" />
+        <nl-select value='answers.time' options='times'></nl-select>
+        in <input nl-text type="text" value="" placeholder="any city" subline="For example: <em>Los Angeles</em> or <em>New York</em>" />
         <div class="nl-submit-wrap">
             <button class="nl-submit" type="submit">Find a restaurant</button>
         </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="app/components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <script src="natural-language.js"></script>
+    <script src="src/nlForm.js"></script>
+    <script src="src/nlForm.select.js"></script>
+    <script src="src/nlForm.text.js"></script>
     <script>
-        angular.module('ExampleApp', ['jlinn.natural-language']).
+        angular.module('ExampleApp', ['vr.directives.nlForm']).
         controller('MainCtrl', function ($scope) {
-            $scope.things = ['one', 'two', 'three'];
-            $scope.otherThings = [];
+            $scope.foods = [
+	            'any food',
+		        'Indian',
+		        'French',
+		        'Japanese',
+		        'Italian'
+            ];
+			$scope.styles = [
+				'standard',
+			    'fancy',
+			    'hip',
+			    'traditional',
+			    'fine'
+			];
+			$scope.times = [
+				{ value: 'any', label: 'anytime' },
+				{ value: '19:00', label: 'at 7 p.m.' },
+				{ value: '20:00', label: 'at 8 p.m.' },
+				{ value: '21:00', label: 'at 9 p.m.' }
+			];
+			$scope.answers = {
+				food: 'any food',
+				style: 'hip',
+				time: '19:00',
+				city: 'any city'
+			};
         });
     </script>
 </body>

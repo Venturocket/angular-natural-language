@@ -17,7 +17,7 @@ module.exports = function(config){
             'app/components/angular-mocks/angular-mocks.js',
 
             //our directive(s)
-            'natural-language.js',
+            'src/*.js',
 
             //tests
             'test/*.js'
