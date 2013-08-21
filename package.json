@@ -1,6 +1,6 @@
 {
     "name": "angular-natural-language",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Natural language form element directives.",
     "main": "",
     "scripts": {
@@ -16,6 +16,10 @@
         "karma": "~0.10",
         "karma-jasmine": "*",
         "karma-chrome-launcher": "*",
-        "karma-firefox-launcher": "*"
+        "karma-firefox-launcher": "*",
+        "grunt": "~0.4.1",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-uglify": "~0.2.2"
     }
 }
