@@ -5,16 +5,18 @@ module.exports = function(grunt){
         srcFiles: [
             'src/*.js'
         ],
+        concat: {
+            prod: {
+                src: ['<%= srcFiles %>'],
+                dest: 'build/<%= pkg.name %>.js'
+            }
+        },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: [
-                    'src/nlForm.js',
-                    'src/nlForm.select.js',
-                    'src/nlForm.test.js'
-                ],
+                src: ['<%= srcFiles %>'],
                 dest: 'build/<%= pkg.name %>.min.js'
             }
         }
@@ -24,5 +26,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['uglify', 'concat:prod']);
+
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
 };
