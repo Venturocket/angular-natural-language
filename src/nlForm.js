@@ -5,6 +5,3 @@
  */
 
 angular.module('vr.directives.nlForm', ['vr.directives.nlForm.select', 'vr.directives.nlForm.text']);
-
-angular.module('vr.directives.nlForm.select', []);
-angular.module('vr.directives.nlForm.text', []);

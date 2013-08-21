@@ -1,68 +1,124 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Joe Linn
- * Date: 8/9/13
- * Time: 2:25 PM
- * To change this template use File | Settings | File Templates.
- */
-describe('naturalLanguageText', function(){
-    var elm, scope;
+describe('Natural Language Text', function(){
+    var elem, scope;
 
-    var inputName = 'testInput';
     var subline = "For example: <em>Los Angeles</em> or <em>New York</em>";
 
     //load the natural language text code
-    beforeEach(module('jlinn.natural-language.text'));
+    beforeEach(module('vr.directives.nlForm.text'));
 
-    beforeEach(inject(function($rootScope, $compile){
-        elm = angular.element(
-            '<div>' +
-                '<input natural-language-text="" type="text" value="" placeholder="any city" subline="{{ subline }}" name="{{ inputName }}"/>' +
-            '</div>'
-        );
-        $rootScope.inputName = inputName;
-        $rootScope.subline = subline;
+	describe('Directive', function() {
 
-        scope = $rootScope;
-        $compile(elm)(scope);
-        scope.$digest();
-    }));
+		beforeEach(inject(function($rootScope, $compile){
+			elem = angular.element('<div><nl-text value="city" placeholder="any city" subline="{{ subline }}" name="city"></nl-text></div>');
+			$rootScope.subline = subline;
+			$rootScope.city = '';
 
-    /*it('should create elements based on the original <input/>', inject(function(){
-        var container = elm.find('.nl-ti-text');
-        var a = container.find('a');
+			scope = $rootScope;
+			$compile(elem)(scope);
+			scope.$digest();
+		}));
 
-        expect(a.length).toBe(1);
+		it('should create the elements', inject(function(){
 
-        var input = container.find('ul .nl-ti-input input[type="text"]');
-        expect(input.attr('name')).toBe(inputName);
+			expect(elem.find('div')).toHaveClass('nl-ti-text');
 
-        expect(container.find('ul .nl-ti-input button')).toHaveClass('nl-field-go');
+			expect(elem.find('.nl-ti-text a').length).toBe(1);
 
-        expect(container.find('ul .nl-ti-example').html()).toBe(subline);
-    }));
+			expect(elem.find('ul .nl-ti-input input[type="text"]').length).toBe(1);
+			expect(elem.find('ul .nl-ti-input input[type="text"]').prop('name')).toBe('city');
 
-    it('should open and close properly', inject(function(){
-        var container = elm.find('.nl-ti-text');
-        var a = container.find('a');
+			expect(elem.find('ul .nl-ti-input button').length).toBe(1);
+			expect(elem.find('ul .nl-ti-input button')).toHaveClass('nl-field-go');
 
-        a.click();
+			expect(elem.find('ul .nl-ti-example').length).toBe(1);
+			expect(elem.find('ul .nl-ti-example').html()).toBe(subline);
+			expect(elem.find('ul .nl-ti-example').css('diaplay')).not.toBe('none');
 
-        expect(container).toHaveClass('nl-field-open');
+			expect(elem.find('.nl-overlay').length).toBe(1);
+		}));
 
-        container.find('button').click();   //close the input
+		it('should show the placeholder text', function() {
+			expect(elem.find('.nl-ti-text a').text()).toBe('any city');
+			expect(elem.find('input').val()).toBe('');
+		});
 
-        expect(container).not.toHaveClass('nl-field-open');
-    }));
+		it('should show the correct value in the input and the view', function() {
+			scope.$apply(function() { scope.city = 'blah'; });
+			expect(elem.find('.nl-ti-text a').text()).toBe('blah');
+			expect(elem.find('input').val()).toBe('blah');
+		});
 
-    it('should reflect the value entered in the input in the anchor', inject(function(){
-        var container = elm.find('.nl-ti-text');
+		it('should not show the subline', function() {
+			scope.$apply(function() { scope.subline = ''; });
+			expect(elem.find('ul .nl-ti-example').html()).toBe('');
+			expect(elem.find('ul .nl-ti-example').css('display')).toBe('none');
+		});
 
-        container.find('a').click();
-        //input('value').enter('test');
-        console.log(container.find('input').val());
-        container.find('button').click();
+		describe('when clicked', function() {
 
-        //expect(container.find('a').html()).toBe('test');
-    }));*/
+			beforeEach(function() {
+				elem.find('a').click();
+			});
+
+			it('should open', function() {
+				expect(elem.find('.nl-ti-text')).toHaveClass('nl-field-open');
+			});
+
+			it('should close when the button is clicked', function() {
+				elem.find('button').click();   //close the input
+				expect(elem.find('.nl-ti-text')).not.toHaveClass('nl-field-open');
+			});
+
+			it('should close when the overlay is clicked', function() {
+				elem.find('.nl-overlay').click();   //close the input
+				expect(elem.find('.nl-ti-text')).not.toHaveClass('nl-field-open');
+			});
+
+		});
+
+	});
+
+	describe('Controller', function() {
+
+		beforeEach(inject(function($rootScope, $controller) {
+			scope = $rootScope.$new();
+			scope.value = '';
+			scope.placeholder = 'anything';
+			scope.name = 'blah';
+			scope.subline = subline;
+			ctrl = $controller('nlTextCtrl', { $scope: scope });
+			scope.$digest();
+		}));
+
+		it('should not be opened', function() {
+			expect(scope.opened).toBeFalsy();
+		});
+
+		it('should show the placeholder', function() {
+			expect(scope.viewValue()).toBe('anything');
+		});
+
+		it('when the value is updated should show the new value in the view', function() {
+			scope.$apply(function() { scope.value = 'woot'; });
+			expect(scope.viewValue()).toBe('woot');
+		});
+
+		describe('when opened', function() {
+
+			beforeEach(function() {
+				scope.$apply(function() { scope.open({ stopPropagation: function() {} }); });
+			});
+
+			it('should actually be opened', function() {
+				expect(scope.opened).toBeTruthy();
+			});
+
+			it('then closed should be closed', function() {
+				scope.$apply(scope.close);
+				expect(scope.opened).toBeFalsy();
+			});
+
+		})
+
+	})
 });

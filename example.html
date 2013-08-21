@@ -153,6 +153,8 @@
         padding: 0.2em 2em 0.2em 0.5em;
         border-bottom: none;
         color: #fff;
+	    line-height: 1.5em;
+	    height: 1.5em;
     }
 
     .nl-form .nl-field-go {
@@ -295,12 +297,12 @@
 
     <form id="nl-form" class="nl-form" ng-controller="MainCtrl">
         I feel like eating
-	    <nl-select value='answers.food' options='foods' multiple="or" empty="nothing"></nl-select>
-        <br />in a
-        <nl-select value='answers.style' options='styles'></nl-select>
+	    <nl-select value='answers.food' options='foods' multiple="or" empty="nothing" ></nl-select><br />
+        in a
+        <nl-select value='answers.style' options='styles' ></nl-select>
         restaurant
-        <nl-select value='answers.time' options='times'></nl-select>
-        in <input nl-text type="text" value="" placeholder="any city" subline="For example: <em>Los Angeles</em> or <em>New York</em>" />
+        <nl-select value='answers.time' options='times' ></nl-select>
+        in <nl-text value="answers.city" placeholder="any city" subline="{{ subline }}" name="city"></nl-text>
         <div class="nl-submit-wrap">
             <button class="nl-submit" type="submit">Find a restaurant</button>
         </div>
@@ -336,8 +338,9 @@
 				food: 'any food',
 				style: 'hip',
 				time: '19:00',
-				city: 'any city'
+				city: ''
 			};
+			$scope.subline = "For example: <em>Los Angeles</em> or <em>New York</em>";
         });
     </script>
 </body>

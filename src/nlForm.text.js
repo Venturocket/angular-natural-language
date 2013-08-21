@@ -1,74 +1,76 @@
-/**
- * Author: Derek Gould
- * Date: 8/19/13
- * Time: 2:43 PM
- */
-
-
-angular.module('vr.directives.nlForm.text', [])
+angular.module('vr.directives.nlForm.text',[])
     .directive('nlText', function(){
         return {
-            restrict: 'A',
-            replace: true,
-            transclude: true,
-            scope: {
-                placeholder: '@',
-                subline: '@',
-                name: '@',
-                value: '@'
-            },
+            restrict: 'EA',
+			replace: true,
+			scope: {
+				placeholder: '@',
+				subline: '@',
+				name: '@',
+				value: '='
+			},
             template:
-                '<div class="nl-field nl-ti-text" ng-class="{\'nl-field-open\': opened}">' +
-                    '<a class="nl-field-toggle" ng-click="open($event)" ng-bind="choose(placeholder, value)"></a>' +
+                '<div ng-form class="nl-field nl-ti-text" ng-class="{\'nl-field-open\': opened}">' +
+                    '<a class="nl-field-toggle" ng-click="open($event)" ng-bind="viewValue()"></a>' +
                     '<ul>' +
                         '<li class="nl-ti-input">' +
-                            '<input type="text" placeholder="{{ placeholder }}" name="{{ name }}" value="{{ value }}" ng-click="$event.stopPropagation()" ng-model="value"/>' +
-                            '<button class="nl-field-go">Go</button>' +
+                            '<input type="text" placeholder="{{ placeholder }}" name="{{ name }}" ng-model="value" ng-click="$event.stopPropagation()" ng-required="required"/>' +
+                            '<button class="nl-field-go" ng-click="close()">Go</button>' +
                         '</li>' +
-                        '<li class="nl-ti-example" ng-bind-html-unsafe="subline"></li>' +
+                        '<li class="nl-ti-example" ng-show="showSubline()" ng-bind-html-unsafe="subline"></li>' +
                     '</ul>' +
                 '</div>',
-            controller: ['$scope', '$element', function($scope, $element){
-                $scope.opened = false;
+            controller: 'nlTextCtrl',
+            link: function(scope, element, attributes){
 
-                $element.parent().bind('click', function(){ $scope.$apply($scope.close) });
+				// is this input required?
+				scope.required = !angular.isUndefined(attributes.required);
 
-                $scope.open = function(event){
-                    event.stopPropagation();
-                    $scope.opened = true;
-                };
-
-                $scope.close = function(){
-                    $scope.opened = false;
-                };
-
-                $scope.select = function(option){
-                    $scope.selected = option;
-                    $scope.close();
-                };
-
-                $scope.choose = function(placeholder, value){
-                    if(value == ''){
-                        return placeholder;
-                    }
-                    return value;
-                };
-            }],
-            link: function(scope, element){
-                //add the overlay element if we don't already have one
-                var overlayed = false;
-                angular.forEach(element.parent().children(), function(child){
-                    child = angular.element(child);
-                    if(child.hasClass('nl-overlay')){
-                        overlayed = true;
-                        scope.overlay = overlayed;
-                    }
-                });
-                if(!overlayed){
-                    scope.overlay = angular.element('<div class="nl-overlay"></div>');
-					scope.overlay.bind('click',scope.close);
-                    element.parent().append(scope.overlay);
-                }
+                var overlay = false;
+				//look for an overlay element
+				angular.forEach(element.parent().children(), function(child){
+					child = angular.element(child);
+					if(child.hasClass('nl-overlay')){
+						overlay = child;
+					}
+				});
+				if(!overlay){
+					// no overlay exists so create one
+					overlay = angular.element('<div class="nl-overlay"></div>');
+					element.parent().append(overlay);
+				}
+				// close the input when the overlay is clicked
+				overlay.bind('click',function() { scope.$apply(scope.close) });
             }
         };
-    });
+    })
+	.controller('nlTextCtrl',['$scope', function($scope){
+
+		// is the input open
+		$scope.opened = false;
+
+		// open the input
+		$scope.open = function(event){
+			event.stopPropagation();
+			$scope.opened = true;
+		};
+
+		// close the input
+		$scope.close = function(){
+			$scope.opened = false;
+		};
+
+		// if there is no value, show the placeholder instead
+		$scope.viewValue = function(){
+			if($scope.value == ''){
+				return $scope.placeholder;
+			}
+			return $scope.value;
+		};
+
+		// do we have a subline? ok, then show it!
+		$scope.showSubline = function() {
+			return angular.isString($scope.subline) && $scope.subline != '';
+		};
+
+	}]);

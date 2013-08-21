@@ -1,10 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Joe Linn
- * Date: 8/9/13
- * Time: 10:09 AM
- * To change this template use File | Settings | File Templates.
- */
 describe('Natural Language Select', function(){
     var elem, rootscope, scope, ctrl;
 
@@ -21,7 +14,7 @@ describe('Natural Language Select', function(){
 			beforeEach(inject(function($compile) {
 				rootscope.options = ['one','two','three'];
 				rootscope.value = 'one';
-				elem = $($compile("<div><nl-select options='options' value='value'></nl-select></div>")(rootscope));
+				elem = $compile("<div><nl-select options='options' value='value'></nl-select></div>")(rootscope);
 				rootscope.$digest();
 			}));
 
@@ -107,17 +100,55 @@ describe('Natural Language Select', function(){
 			});
 
 		});
+
+		describe('when clicked', function() {
+
+			beforeEach(inject(function($compile) {
+				rootscope.options = { 'one': 'ten' , 'two': 'nine' , 'three': 'eight' };
+				rootscope.value = 'eight';
+				elem = $($compile("<div><nl-select options='options' value='value'></nl-select></div>")(rootscope));
+				rootscope.$digest();
+				elem.find('a').click();
+			}));
+
+			it('should open the select', function() {
+				expect(elem.find('div')).toHaveClass('nl-field-open');
+			});
+
+			it('should close when the overlay is clicked', function() {
+				elem.find('.nl-overlay').click();
+				expect(elem.find('div')).not.toHaveClass('nl-field-open');
+			});
+
+			describe('and an option is selected', function() {
+
+				beforeEach(function() {
+					elem.find('li').eq(1).click();
+				});
+
+				it('should close', function() {
+
+				})
+
+			});
+
+		});
 	});
 
 	describe('Controller', function() {
 
-		beforeEach(inject(function($controller) {
+		beforeEach(inject(function($rootScope, $controller) {
+			rootscope = $rootScope;
 			scope = rootscope.$new();
 			scope.options = {'one':'ten','two':'nine','three':'eight'};
 			scope.value = 'ten';
 			scope.multiple = false;
 			scope.conjunction = 'and';
 			scope.none = 'none';
+			scope.required = false;
+			scope.nlSelect = {
+				$setValidity: jasmine.createSpy('setValidity')
+			};
 			ctrl = $controller('nlSelectCtrl', { $scope: scope });
 			scope.$digest();
 		}));
@@ -187,6 +218,24 @@ describe('Natural Language Select', function(){
 
 			it('should get the selected text for only one option', function() {
 				expect(scope.getSelected()).toBe('one');
+			});
+
+			describe('and at least one is required',function() {
+
+				beforeEach(function() {
+					scope.$apply(function() { scope.required = true; });
+					scope.setValue('one');
+				});
+
+				it('should become invalid', function() {
+					expect(scope.nlSelect.$setValidity).toHaveBeenCalledWith('required',false);
+				});
+
+				it('should become valid again', function() {
+					scope.setValue('two');
+					expect(scope.nlSelect.$setValidity).toHaveBeenCalledWith('required',true);
+				});
+
 			});
 
 			describe('and multiple options are selected', function() {

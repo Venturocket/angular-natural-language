@@ -1,6 +1,4 @@
-'use strict';
-
-angular.module('vr.directives.nlForm.select')
+angular.module('vr.directives.nlForm.select',[])
     .directive('nlSelect', function(){
         return {
             restrict: 'EA',
@@ -11,13 +9,16 @@ angular.module('vr.directives.nlForm.select')
 			},
             controller: 'nlSelectCtrl',
 			template:
-				"<div class='nl-field nl-dd' ng-class=\"{'nl-field-open': opened}\">" +
+				"<div ng-form='nlSelect' class='nl-field nl-dd' ng-class=\"{'nl-field-open': opened}\">" +
 					"<a class='nl-field-toggle' ng-click='open($event)' ng-bind='getSelected()'></a>" +
 					"<ul>" +
 						"<li ng-repeat='label in getLabels()' ng-class=\"{'nl-dd-checked': isSelected(label)}\" ng-click='select(label)' ng-bind='label'></li>" +
 					"</ul>" +
 				"</div>",
 			link: function(scope, element, attributes){
+
+				// is this required
+				scope.required = !angular.isUndefined(attributes.required);
 
 				// allow multiple options to be selected
 				scope.multiple = !angular.isUndefined(attributes.multiple);
@@ -45,7 +46,7 @@ angular.module('vr.directives.nlForm.select')
 					element.parent().append(overlay);
 				}
 				// close the select when the overlay is clicked
-				overlay.bind('click',scope.close);
+				overlay.bind('click',function() { scope.$apply(scope.close); });
 
 			}
         };
@@ -227,7 +228,17 @@ angular.module('vr.directives.nlForm.select')
 				if(index == -1) {
 					$scope.value.push(value);
 				} else {
-					$scope.value.splice(index,1)
+					$scope.value.splice(index,1);
+				}
+				if($scope.required) {
+					// at least one option must be selected
+					if($scope.value.length == 0) {
+						// no options selected so it's invalid
+						$scope.nlSelect.$setValidity('required',false);
+					} else {
+						// we're good here
+						$scope.nlSelect.$setValidity('required',true);
+					}
 				}
 			} else {
 				$scope.value = value;
