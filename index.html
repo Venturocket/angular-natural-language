@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Angular-natural-language : Natural language form element directives for AngularJS" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Angular-natural-language</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Venturocket/angular-natural-language">View on GitHub</a>
+
+          <h1 id="project_title">Angular-natural-language</h1>
+          <h2 id="project_tagline">Natural language form element directives for AngularJS</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Venturocket/angular-natural-language/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Venturocket/angular-natural-language/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
+
+<p>Natural language form element directives for AngularJS.
+Based on <a href="https://github.com/codrops/NaturalLanguageForm">codrops/NaturalLanguageForm</a>.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a name="nlselect" class="anchor" href="#nlselect"><span class="octicon octicon-link"></span></a>nlSelect</h3>
+
+<h4>
+<a name="markup" class="anchor" href="#markup"><span class="octicon octicon-link"></span></a>Markup</h4>
+
+<p>As an element:</p>
+
+<pre><code>&lt;nl-select
+    value="{string}"
+    options="{string}"
+    multiple="{string}"
+    empty="{string}"
+    required&gt;
+&lt;/nl-select&gt;
+</code></pre>
+
+<p>As an attribute:</p>
+
+<pre><code>&lt;div
+    nl-select
+    value="{string}"
+    options="{string}"
+    multiple="{string}"
+    empty="{string}"
+    required&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>
+<a name="parameters" class="anchor" href="#parameters"><span class="octicon octicon-link"></span></a>Parameters</h4>
+
+<table>
+<thead><tr>
+<th>Param</th>
+<th>Type</th>
+<th>Details</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Assignable angular expression to data-bind to. (think of it like ng-model)</td>
+</tr>
+<tr>
+<td>options</td>
+<td>string</td>
+<td>Expression to data-bind to. (the options list section below shows the accepted formats)</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>string (optional)</td>
+<td>Simulates the multiple attribute on a normal select. The string value given is used as the conjunction between selections. Defaults: "and"</td>
+</tr>
+<tr>
+<td>empty</td>
+<td>string (optional)</td>
+<td>What to display when no options are selected. Default: "none" (this is only used if multiple is specified)</td>
+</tr>
+<tr>
+<td>required</td>
+<td>boolean</td>
+<td>Simulates the required attribute on a normal select</td>
+</tr>
+</tbody>
+</table><h4>
+<a name="options-list" class="anchor" href="#options-list"><span class="octicon octicon-link"></span></a>Options List</h4>
+
+<p>The options list can be in one of the 4 following formats:</p>
+
+<p>Array of labels/values:</p>
+
+<pre><code>['one', 'two', 'three', ...]
+</code></pre>
+
+<p>Array of objects:</p>
+
+<pre><code>[
+    { label: 'one', value: 'ten' },
+    { label: 'two', value: 'nine' },
+    { label: 'three', value: 'eight' },
+    ...
+]
+</code></pre>
+
+<p>Object of labels/values:</p>
+
+<pre><code>{ 'one':'ten', 'two':'nine', 'three':'eight', ... }
+</code></pre>
+
+<p>Object of objects:</p>
+
+<pre><code>{
+    'one':{ label: 'one', value: 'ten' },
+    'two':{ label: 'two', value: 'nine' },
+    'three':{ label: 'three', value: 'eight' },
+    ...
+}
+</code></pre>
+
+<h2></h2>
+
+<h3>
+<a name="nltext" class="anchor" href="#nltext"><span class="octicon octicon-link"></span></a>nlText</h3>
+
+<h4>
+<a name="markup-1" class="anchor" href="#markup-1"><span class="octicon octicon-link"></span></a>Markup</h4>
+
+<p>As an element:</p>
+
+<pre><code>&lt;nl-text
+    value="{string}"
+    placeholder="{string}"
+    subline="{string}"
+    name="{string}"
+    required&gt;
+&lt;/nl-text&gt;
+</code></pre>
+
+<p>As an attribute:</p>
+
+<pre><code>&lt;div
+    nl-text
+    value="{string}"
+    placeholder="{string}"
+    subline="{string}"
+    name="{string}"
+    required&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>
+<a name="parameters-1" class="anchor" href="#parameters-1"><span class="octicon octicon-link"></span></a>Parameters</h4>
+
+<table>
+<thead><tr>
+<th>Param</th>
+<th>Type</th>
+<th>Details</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>Assignable angular expression to data-bind to. (think of it like ng-model)</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>string (optional)</td>
+<td>String to use as the placeholder for the input and default text for the view</td>
+</tr>
+<tr>
+<td>subline</td>
+<td>string (optional)</td>
+<td>Small bit of directions to display just below the input</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string (optional)</td>
+<td>Passed directly to the actual input element</td>
+</tr>
+<tr>
+<td>required</td>
+<td>boolean</td>
+<td>Simulates the required attribute on a normal text input</td>
+</tr>
+</tbody>
+</table>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Angular-natural-language maintained by <a href="https://github.com/Venturocket">Venturocket</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-20652388-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
