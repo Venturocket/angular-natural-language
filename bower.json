@@ -5,7 +5,13 @@
     "ignore": [
         "**/.*",
         "node_modules",
-        "components"
+        "components",
+        "lib",
+        "test",
+        "example.html",
+        "Grundfile.js",
+        "karma.conf.js",
+        "package.json"
     ],
     "dependencies": {
         "angular": "~1.0.6"
