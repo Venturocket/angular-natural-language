@@ -12,7 +12,7 @@ module.exports = function(config){
 
         files: [
             //libraries
-            'lib/*.js',
+            'app/components/jquery/jquery.min.js',
             'app/components/angular/angular.js',
             'app/components/angular-mocks/angular-mocks.js',
 

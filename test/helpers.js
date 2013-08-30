@@ -14,4 +14,20 @@ beforeEach(function(){
             return this.actual.hasClass(cls);
         }
     });
+
+    /**
+     * Determine the length of the given associative JS object
+     * @param obj a javascript object
+     * @returns int
+     */
+    Object.size = function(obj){
+        var size = 0;
+        var key;
+        for(key in obj){
+            if(obj.hasOwnProperty(key)){
+                size++;
+            }
+        }
+        return size;
+    };
 });

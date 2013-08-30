@@ -20,11 +20,13 @@ describe('Natural Language Select', function(){
 
 			it('should create a list of options and an overlay element', function(){
 				var options = elem.find('li');
-				expect(options.length).toBe(3);
-				expect(options.eq(0).text()).toBe('one');
-				expect(options.eq(1).text()).toBe('two');
-				expect(options.eq(2).text()).toBe('three');
-				expect(options.eq(0)).toHaveClass('nl-dd-checked');
+				expect(options.length).toBe(rootscope.options.length + 2);  // +2 to account for 'all' and 'none' options
+                expect(options.eq(0).css('display')).toBe('none');  // this is not a multi-select, so the 'all' option should be hidden
+                expect(options.eq(4).css('display')).toBe('none');  // this is not a multi-select, so the 'none' option should be hidden
+				expect(options.eq(1).text()).toBe('one');
+				expect(options.eq(2).text()).toBe('two');
+				expect(options.eq(3).text()).toBe('three');
+				expect(options.eq(1)).toHaveClass('nl-dd-checked');
 
 				var link = elem.find('a');
 				expect(link.length).toBe(1);
@@ -46,11 +48,11 @@ describe('Natural Language Select', function(){
 
 			it('should create a list of options and an overlay element', function(){
 				var options = elem.find('li');
-				expect(options.length).toBe(3);
-				expect(options.eq(0).text()).toBe('one');
-				expect(options.eq(1).text()).toBe('two');
-				expect(options.eq(2).text()).toBe('three');
-				expect(options.eq(1)).toHaveClass('nl-dd-checked');
+				expect(options.length).toBe(rootscope.options.length + 2);
+				expect(options.eq(1).text()).toBe('one');
+				expect(options.eq(2).text()).toBe('two');
+				expect(options.eq(3).text()).toBe('three');
+				expect(options.eq(2)).toHaveClass('nl-dd-checked');
 
 				expect(elem.children().eq(1)).toHaveClass('nl-overlay');
 			});
@@ -68,11 +70,11 @@ describe('Natural Language Select', function(){
 
 			it('should create a list of options and an overlay element', function(){
 				var options = elem.find('li');
-				expect(options.length).toBe(3);
-				expect(options.eq(0).text()).toBe('one');
-				expect(options.eq(1).text()).toBe('two');
-				expect(options.eq(2).text()).toBe('three');
-				expect(options.eq(2)).toHaveClass('nl-dd-checked');
+				expect(options.length).toBe(Object.size(rootscope.options) + 2);
+				expect(options.eq(1).text()).toBe('one');
+				expect(options.eq(2).text()).toBe('two');
+				expect(options.eq(3).text()).toBe('three');
+				expect(options.eq(3)).toHaveClass('nl-dd-checked');
 
 				expect(elem.children().eq(1)).toHaveClass('nl-overlay');
 			});
@@ -90,11 +92,11 @@ describe('Natural Language Select', function(){
 
 			it('should create a list of options and an overlay element', function(){
 				var options = elem.find('li');
-				expect(options.length).toBe(3);
-				expect(options.eq(0).text()).toBe('one');
-				expect(options.eq(1).text()).toBe('two');
-				expect(options.eq(2).text()).toBe('three');
-				expect(options.eq(0)).toHaveClass('nl-dd-checked');
+				expect(options.length).toBe(Object.size(rootscope.options) + 2);
+				expect(options.eq(1).text()).toBe('one');
+				expect(options.eq(2).text()).toBe('two');
+				expect(options.eq(3).text()).toBe('three');
+				expect(options.eq(1)).toHaveClass('nl-dd-checked');
 
 				expect(elem.children().eq(1)).toHaveClass('nl-overlay');
 			});
@@ -219,6 +221,19 @@ describe('Natural Language Select', function(){
 			it('should get the selected text for only one option', function() {
 				expect(scope.getSelected()).toBe('one');
 			});
+
+            describe('and the "all" option is in use', function(){
+                beforeEach(inject(function($compile){
+                    elem = $($compile("<div><nl-select options='options' value='ten' all='every' multiple='or'></nl-select></div>")(rootscope));
+                    scope.$apply((function(){
+                        scope.selectNone();
+                    }));
+                }));
+
+                it('should have a visible "all" option', function(){
+                    //TODO: complete this test
+                });
+            });
 
 			describe('and at least one is required',function() {
 

@@ -36,6 +36,8 @@ As an attribute:
 |value		|string	|Assignable angular expression to data-bind to. (think of it like ng-model)|
 |options	|string	|Expression to data-bind to. (the options list section below shows the accepted formats)|
 |multiple	|string (optional) |Simulates the multiple attribute on a normal select. The string value given is used as the conjunction between selections. Defaults: "and"|
+|all        |string (optional)  |Only applicable if multiple is enabled. Text to display for the select all option.|
+|none       |string (optional)  |Only applicable if multiple is enabled. Text to display for the select none option.|
 |empty		|string (optional) |What to display when no options are selected. Default: "none" (this is only used if multiple is specified)|
 |required	|boolean|Simulates the required attribute on a normal select|
 

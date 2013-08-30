@@ -297,8 +297,8 @@
 
     <form id="nl-form" class="nl-form" ng-controller="MainCtrl">
         I feel like eating
-	    <nl-select value='answers.food' options='foods' multiple="or" empty="nothing" ></nl-select><br />
-        in a
+	    <nl-select value='answers.food' options='foods' multiple="or" none="no" all="any"></nl-select><br />
+        food in a
         <nl-select value='answers.style' options='styles' ></nl-select>
         restaurant
         <nl-select value='answers.time' options='times' ></nl-select>
@@ -315,7 +315,6 @@
         angular.module('ExampleApp', ['vr.directives.nlForm']).
         controller('MainCtrl', function ($scope) {
             $scope.foods = [
-	            'any food',
 		        'Indian',
 		        'French',
 		        'Japanese',
@@ -335,7 +334,7 @@
 				{ value: '21:00', label: 'at 9 p.m.' }
 			];
 			$scope.answers = {
-				food: 'any food',
+				food: 'Japanese',
 				style: 'hip',
 				time: '19:00',
 				city: ''
