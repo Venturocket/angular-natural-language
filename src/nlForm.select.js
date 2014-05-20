@@ -194,6 +194,41 @@ angular.module('vr.directives.nlForm.select',[])
 			return value;
         }
 
+		// given an option (label, object, value, etc) retrieve its label
+		function getLabelFromOption(option) {
+			var label = option;
+
+			switch($scope.optionType) {
+				case ARRAY_OF_LABELS:
+					// the option is the value so don't do anything
+					break;
+				case OBJECT_OF_VALUES:
+					angular.forEach($scope.options,function(val, lbl) {
+						if(option == val) {
+							label = lbl;
+						}
+					});
+					break;
+				case ARRAY_OF_OBJECTS:
+					// find the option with the given label
+					angular.forEach($scope.options,function(opt) {
+						if(opt.value == option.value) {
+							label = opt.label;
+						}
+					});
+					break;
+				case OBJECT_OF_OBJECTS:
+					angular.forEach($scope.options,function(val, lbl) {
+						if(option == val) {
+							label = lbl;
+						}
+					});
+					break;
+			}
+
+			return label;
+        }
+		
         // check to make sure all the values are in the list of options
 		function checkValue() {
 			if($scope.multiple) {
@@ -233,8 +268,9 @@ angular.module('vr.directives.nlForm.select',[])
          */
         $scope.selectAll = function(){
             angular.forEach($scope.options, function(option){
-                if(!$scope.isSelected(option)){
-                    $scope.select(option);
+				var label = getLabelFromOption(option);
+                if(!$scope.isSelected(label)){
+                    $scope.select(label);
                 }
                 $scope.close();
             });
@@ -245,8 +281,9 @@ angular.module('vr.directives.nlForm.select',[])
          */
         $scope.selectNone = function(){
             angular.forEach($scope.options, function(option){
-                if($scope.isSelected(option)){
-                    $scope.select(option);
+				var label = getLabelFromOption(option);
+                if($scope.isSelected(label)){
+                    $scope.select(label);
                 }
                 $scope.close();
             });
